@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="smart1_contactSearchText">
+		<item>이름</item>
+		<item>전화번호</item>
+		<item>이메일</item>
+		<item>부서</item>
+	</string-array>
+	
+	<string-array name="calendar_week">
+		<item>일</item>
+		<item>월</item>
+		<item>화</item>
+		<item>수</item>
+		<item>목</item>
+		<item>금</item>
+		<item>토</item>
+	</string-array>
+	
+	
+	<!-- 
+	<string-array name="contactEmailSendType">
+		<item></item>
+		<item>TO</item>
+		<item>CC</item>
+	</string-array>
+	
+	<string-array name="configuration_Mail_MaxCount">
+		<item>20개의 메일</item>
+		<item>30개의 메일</item>
+		<item>50개의 메일</item>
+		<item>100개의 메일</item>
+		<item>200개의 메일</item>
+</string-array>
+
+	<string-array name="configuration_Mail_Select_Period">
+		<item>3일</item>
+		<item>5일</item> 
+		<item>7일</item>
+		<item>15일</item>
+		<item>30일</item>
+	</string-array>
+	
+	<string-array name="configuration_Mail_BodySize">
+		<item>작게</item>
+		<item>중간</item>
+		<item>크게</item>
+	</string-array>
+	
+	<string-array name="configuration_Contact_ContactList">
+		<item>주소록</item>
+		<item>그룹별</item>
+	</string-array>
+	
+	
+	<string-array name="configuration_Approved_Select_Period">
+		<item>3일</item>
+		<item>5일</item> 
+		<item>7일</item>
+		<item>15일</item>
+		<item>30일</item>
+	</string-array>
+	
+	<string-array name="configuration_Approved_MaxCount">
+		<item>20개의 문서</item>
+		<item>30개의 문서</item>
+		<item>50개의 문서</item>
+		<item>100개의 문서</item>
+		
+	</string-array>	
+	
+	<string-array name="configuration_Contact_MaxCount">
+		<item>50개의 주소록</item>
+		<item>100개의 주소록</item>
+		<item>200개의 주소록</item>
+		<item>300개의 주소록</item>
+		<item>500개의 주소록</item>		
+	</string-array>	
+	
+	<string-array name="configuration_Contact_MaxListCount">
+		<item>100개의 주소록 리스트</item>
+		<item>200개의 주소록 리스트</item>
+		<item>300개의 주소록 리스트</item>
+		<item>500개의 주소록 리스트</item>
+	</string-array>
+	
+	<string-array name="configuration_Approved_DefaultList">
+		<item>미결</item>
+		<item>기결</item>
+	</string-array>
+	
+	<string-array name="configuration_Bulletin_MaxNoticeCount">
+		<item>20개의 알림판 글</item>
+		<item>30개의 알림판 글</item>
+		<item>50개의 알림판 글</item>
+		<item>100개의 알림판 글</item>
+		<item>200개의 알림판 글</item>
+	</string-array>	
+	
+	<string-array name="configuration_Bulletin_MaxBoardCount">
+		<item>20개의 게시판 글</item>
+		<item>30개의 게시판 글</item>
+		<item>50개의 게시판 글</item>
+		<item>100개의 게시판 글</item>
+		<item>200개의 게시판 글</item>
+	</string-array>	
+	
+	<string-array name="configuration_Ticker_TickerType">
+		<item>최신메일</item>
+		<item>공지사항</item>
+		<item>일정</item>
+		<item>결재</item>
+		<item>사용자 지정 문구</item>
+	</string-array>	
+	
+	<string-array name="configuration_Account_DefaultAccount">
+		<item>tester@mobilecnc.com</item>
+	</string-array>	
+	
+	<string-array name="google_weather_cities">
+		<item>서울/경기</item>
+		<item>충남/대전</item>
+		<item>충북/청주</item>
+		<item>영서/춘천</item>
+		<item>영동/강릉</item>
+		<item>울릉/독도</item>
+		<item>전남/광주</item>
+		<item>전북/전주</item>
+		<item>경남/부산</item>
+		<item>경북/대구</item>
+		<item>제주도</item>
+	</string-array>	
+	
+	<string-array name="file_explorer_extensionList">
+		<item>png</item>
+		<item>gif</item>
+		<item>jpg</item>
+		<item>doc</item>
+		<item>ppt</item>
+		<item>html</item>
+		<item>pdf</item>
+	</string-array>
+	
+	
+	<string-array name="calendar_repeat">
+		<item>없음</item>
+		<item>매일</item>
+		<item>매주</item>
+		<item>2주마다</item>
+		<item>매달</item>
+		<item>매년</item>
+	</string-array>
+	
+	<string-array name="calendar_alarm">
+		<item>없음</item>
+		<item>정각</item>
+		<item>5분 전</item>
+		<item>15분 전</item>
+		<item>30분 전</item>
+		<item>1시간 전</item>
+		<item>2시간 전</item>
+		<item>1일 전</item>
+		<item>2일 전</item>
+	</string-array>
+	--> 
+</resources>

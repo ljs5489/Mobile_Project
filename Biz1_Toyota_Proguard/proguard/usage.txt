@@ -1,0 +1,1646 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.mcnc.hsmart.BuildConfig
+com.mcnc.hsmart.R
+com.mcnc.hsmart.R$anim
+com.mcnc.hsmart.R$array
+com.mcnc.hsmart.R$attr
+com.mcnc.hsmart.R$color
+com.mcnc.hsmart.R$drawable
+com.mcnc.hsmart.R$id
+com.mcnc.hsmart.R$layout
+com.mcnc.hsmart.R$menu
+com.mcnc.hsmart.R$raw
+com.mcnc.hsmart.R$string
+com.mcnc.hsmart.R$style
+com.mcnc.hsmart.R$xml
+com.mcnc.hsmart.configuration.model.ConfigurationModel:
+    private java.lang.String sessionId
+    private boolean useridSave
+    private boolean isVersionCheck
+    225:226:public java.lang.String getSessionId()
+    230:231:public boolean setSessionId(java.lang.String)
+    252:254:public void setVersionAppMajor(int)
+    262:264:public void setVersionAppMinor(int)
+    272:274:public void setVersionAppBuild(int)
+    302:304:public void setVersionMetaMajor(int)
+    312:314:public void setVersionMetaMinor(int)
+    317:318:public boolean getCheckUpdate()
+    327:328:public boolean isUserIdSaveChecked()
+    331:333:public void setUserIdSaveChecked(boolean)
+com.mcnc.hsmart.configuration.model.InitializeConfiguration:
+    public static final java.lang.String CONFIG_PREFS
+com.mcnc.hsmart.configuration.view.NetworkConfigurationActivity:
+    423:423:protected void onAction(android.view.View)
+com.mcnc.hsmart.controller.Smart2ProcessController:
+    private static com.mcnc.hsmart.controller.Smart2ProcessController instance
+    private android.content.Context mContext
+    108:108:public static com.mcnc.hsmart.controller.Smart2ProcessController getInstance()
+    112:113:public void setContext(android.content.Context)
+    116:118:public android.content.Context getContext()
+    223:240:protected void startActivity(android.content.Intent,android.app.Activity)
+com.mcnc.hsmart.core.BuildConfig
+com.mcnc.hsmart.core.R
+com.mcnc.hsmart.core.R$attr
+com.mcnc.hsmart.core.R$drawable
+com.mcnc.hsmart.core.R$layout
+com.mcnc.hsmart.core.R$string
+com.mcnc.hsmart.core.comm.CommManager:
+    public static final java.lang.String HTTPSERVICE
+    70:73:public void registerService(java.lang.String,com.mcnc.hsmart.core.comm.ICommService)
+    79:80:public void unregisterService(java.lang.String)
+com.mcnc.hsmart.core.comm.HttpService:
+    private static final java.lang.String JSESSIONID2
+    private static final java.lang.String COOKIE2
+    private static final java.lang.String JSESSIONID
+    private static final java.lang.String COOKIE
+    private static final java.lang.String REQUEST_HEADER
+    private static final java.lang.String DOMAIN
+    private static final java.lang.String COOKIE_NAME
+    private static final java.lang.String UTF_8
+    private static final java.lang.String VALUE
+    private static final java.lang.String RESPONSE_HEADER
+    private static final java.lang.String REQUEST_URL
+    private static final java.lang.String MESSAGE
+    258:268:public java.util.List getCookie()
+    273:325:public int setConnectTimeOut(int)
+com.mcnc.hsmart.core.comm.HttpService$2
+com.mcnc.hsmart.core.comm.ICommService:
+    public abstract java.util.List getCookie()
+    public abstract int setConnectTimeOut(int)
+com.mcnc.hsmart.core.common.Request:
+    private java.lang.String callMethod
+    private int buttonID
+    50:57:public Request(java.lang.String,java.lang.Object,com.mcnc.hsmart.core.view.IResponseListener,int,int)
+    92:92:public int getSourcePageID()
+    96:97:public void setSourcePageID(int)
+    100:100:public int getButtonID()
+    104:105:public void setButtonID(int)
+    124:124:public java.lang.String getCallMethod()
+    128:129:public void setCallMethod(java.lang.String)
+    132:132:public java.lang.String getCallType()
+    180:181:public void setRequestWebView(android.webkit.WebView)
+com.mcnc.hsmart.core.common.Response:
+    32:39:public Response(java.lang.Object,java.lang.Object,com.mcnc.hsmart.core.common.Request,java.lang.String,boolean)
+    42:42:public java.lang.Object getTrCode()
+    46:47:public void setTrCode(java.lang.Object)
+    82:82:public java.lang.Object getTargetActivityID()
+    86:87:public void setTargetActivityID(int)
+    90:90:public java.lang.Class getTargetActivity()
+    94:95:public void setTargetActivity(java.lang.Class)
+    106:106:public boolean isModal()
+com.mcnc.hsmart.core.controller.BaseNavigation
+com.mcnc.hsmart.core.controller.BaseProcessController:
+    private static final java.lang.String REQ_CANCELED
+    private static final java.lang.String HANDLE_MESSAGE_IS_ERROR
+    private static final java.lang.String HANDLE_MESSAGE_OBJ
+    private static final java.lang.String HANDLE_MESSAGE_WHAT
+    private static final java.lang.String HANDLE_MESSAGE_THREAD
+    private static final java.lang.String ON_SUCCESS
+    private static final java.lang.String ON_ERROR
+    private static final java.lang.String ORIGINAL_LISTENER
+    private static final java.lang.String TASK_NOT_FOUND2
+    private static final java.lang.String START
+    private static final java.lang.String TASK
+    private static final java.lang.String EXECUTE_WITH_REQUEST
+    private static final java.lang.String DOWNLOAD_SERVICE_BINDING
+    private static final java.lang.String UPLOAD_SERVICE_BINDING
+    private static final java.lang.String COM_MCNC_HSMART_DOWNLOAD_SERVICE
+    private static final java.lang.String COM_MCNC_HSMART_UPLOAD_SERVICE
+    private static final java.lang.String ON_SERVICE_DISCONNECTED
+    private static final java.lang.String DOWNLOAD_SERVICE
+    private static final java.lang.String SERVICE
+    private static final java.lang.String ON_SERVICE_CONNECTED
+    private static final java.lang.String TASK_NOT_FOUND
+    public static final int TASK_ID_BASE
+    protected abstract void startActivity(android.content.Intent,android.app.Activity)
+com.mcnc.hsmart.core.device.DeviceManager
+com.mcnc.hsmart.core.download.AbstractDownloadService:
+    94:94:public java.util.HashMap getNotificationMap()
+com.mcnc.hsmart.core.exception.ReqCancelException:
+    private static final long serialVersionUID
+    private static final java.lang.String MSG
+com.mcnc.hsmart.core.exception.RequestException:
+    private static final long serialVersionUID
+com.mcnc.hsmart.core.exception.ResponseException:
+    private static final long serialVersionUID
+com.mcnc.hsmart.core.exception.ServerException:
+    private static final long serialVersionUID
+com.mcnc.hsmart.core.file.FileManager
+com.mcnc.hsmart.core.log.ILoggerStrategy:
+    public abstract void w(java.lang.String,java.lang.String)
+    public abstract void write(int,java.lang.String,java.lang.String)
+com.mcnc.hsmart.core.log.Logger:
+    public static final int VERBOSE
+    public static final int FILTER
+    public static final int DEBUG
+    public static final int INFO
+    public static final int WARN
+    public static final int ERROR
+    public static final int DONTLOGGING
+    public static final java.lang.String WEB_TAG
+    64:66:public static void w(java.lang.String,java.lang.String)
+    69:70:public static void write(int,java.lang.String,java.lang.String)
+com.mcnc.hsmart.core.log.LoggerStrategyDefault:
+    34:35:public void w(java.lang.String,java.lang.String)
+    39:40:public void write(int,java.lang.String,java.lang.String)
+com.mcnc.hsmart.core.task.AbstractBaseTask:
+    private boolean terminated
+    53:53:public boolean isTerminated()
+    57:58:public void setTerminated(boolean)
+com.mcnc.hsmart.core.task.ITask
+com.mcnc.hsmart.core.update.UpdateManager
+com.mcnc.hsmart.core.upload.AbstractUploadService:
+    32:34:public static void setDownloadPath(java.lang.String)
+    37:37:public static java.lang.String getDownloadPath()
+    88:88:public java.util.HashMap getNotificationMap()
+com.mcnc.hsmart.core.upload.IUpload:
+    public abstract void asyncUpload(com.mcnc.hsmart.core.common.Request)
+com.mcnc.hsmart.core.util.Base64Coder:
+    62:62:public static java.lang.String encodeString(java.lang.String)
+    74:74:public static char[] encode(byte[])
+    121:121:public static java.lang.String decodeString(java.lang.String)
+    134:134:public static byte[] decode(java.lang.String)
+    148:182:public static byte[] decode(char[])
+    190:192:public static void main(java.lang.String[])
+com.mcnc.hsmart.core.util.FileUtils:
+    31:56:public static void CreateReourceFile(android.content.Context,int,java.io.File)
+    59:106:public static void fileCopy(java.lang.String,java.lang.String)
+    110:151:public void fileCopy(android.content.Context,java.lang.String,java.lang.String,int)
+    184:240:public static void filemove(java.io.File,java.io.File)
+    250:273:public static java.lang.String getMD5(java.io.File)
+    284:305:public static java.lang.String getMD5(java.io.InputStream)
+    317:326:private static java.lang.String byteToString(byte[])
+    348:351:public static java.io.File getWorkingTempDir_Sdcard()
+    355:357:public static void cleanupWorkingTempDir_Sdcard(java.io.File)
+    362:371:public static void cleanupWorkingTempDirs_Sdcard()
+    374:396:public static boolean isNeeddir_file(java.io.File)
+    403:434:public static void cleanupWorkingDirsall(java.lang.String)
+    438:441:public static void cleanupData(java.lang.String)
+    490:504:public static void DirFilelistChek(java.io.File)
+    510:531:public static void delFilterFile(java.io.File,java.lang.String)
+com.mcnc.hsmart.core.util.ImageUtil:
+    public static final int MODE_LOCAL
+    public static final int MODE_ASSET
+    public static final int MODE_HTTP
+    55:55:public static java.lang.String getProviderPath()
+com.mcnc.hsmart.core.util.ObjectSizer
+com.mcnc.hsmart.core.util.SMSHandler
+com.mcnc.hsmart.core.util.SMSObserver
+com.mcnc.hsmart.core.util.Unit
+com.mcnc.hsmart.core.view.AbstractActivity:
+    public static final int DIALOG_ID_PROGRESS_DEFAULT
+    public static final int DIALOG_ID_PROGRESS_DEFAULT_CANCELABLE
+    public static final int DIALOG_ID_PROGRESS_BAR
+    public static final int DIALOG_ID_PROGRESS_BAR_CANCELABLE
+    72:77:protected void hideProgress(int)
+com.mcnc.hsmart.core.view.BaseActivity:
+    public static final java.lang.String DISMISS_WEB_MODAL
+    public static final java.lang.String POP_VIEW
+    public static final java.lang.String ACTION
+    protected abstract void onAction(android.view.View)
+    390:422:public void loadUrl(java.lang.String,int)
+    428:429:public void cancelLoadUrl()
+    438:439:public void clearCache()
+    445:449:public void clearHistory()
+    516:524:public double getDoubleProperty(java.lang.String,double)
+    534:535:public void setBooleanProperty(java.lang.String,boolean)
+    544:545:public void setIntegerProperty(java.lang.String,int)
+    554:555:public void setStringProperty(java.lang.String,java.lang.String)
+    564:565:public void setDoubleProperty(java.lang.String,double)
+    601:622:public void onReceivedError(int,java.lang.String,java.lang.String)
+    638:649:public void startActivityForResult(com.phonegap.api.Plugin,android.content.Intent,int)
+    661:682:public void displayError(java.lang.String,java.lang.String,java.lang.String,boolean)
+com.mcnc.hsmart.core.view.BaseActivity$2
+com.mcnc.hsmart.core.view.BaseActivity$3
+com.mcnc.hsmart.core.view.BaseActivity$4
+com.mcnc.hsmart.core.view.BaseActivity$5
+com.mcnc.hsmart.core.view.BaseActivity$5$1
+com.mcnc.hsmart.core.view.BaseAppActivity:
+    private android.widget.LinearLayout headerLayout
+    private android.widget.LinearLayout bodyLayout
+    private android.widget.LinearLayout bottomLayout
+    22:22:protected void onAction(android.view.View)
+    61:61:public android.widget.LinearLayout getHeaderLayout()
+    65:66:public void setHeaderLayout(android.widget.LinearLayout)
+    69:69:public android.widget.LinearLayout getBodyLayout()
+    73:74:public void setBodyLayout(android.widget.LinearLayout)
+    77:77:public android.widget.LinearLayout getBottomLayout()
+    81:82:public void setBottomLayout(android.widget.LinearLayout)
+    101:101:public void startActivityForResult(com.phonegap.api.Plugin,android.content.Intent,int)
+com.mcnc.hsmart.core.view.BaseWebView:
+    private boolean isLoadingDialog
+    private boolean isloading
+    65:65:public boolean isLodingDialog()
+    69:70:public void setLodingDialog(boolean)
+com.mcnc.hsmart.core.view.LoadWebView
+com.mcnc.hsmart.core.view.LoadWebView$1
+com.mcnc.hsmart.core.view.LoadWebView$1$1
+com.mcnc.hsmart.core.view.LoadWebView$1$2
+com.mcnc.hsmart.core.view.LoadWebView$1$3
+com.mcnc.hsmart.core.view.LoadWebView$AndroidWebViewClient
+com.mcnc.hsmart.core.view.McncWebViewClient
+com.mcnc.hsmart.def.ActivityRequestCode
+com.mcnc.hsmart.def.Def:
+    public static final int MODE_LOCAL
+    public static final int MODE_ASSET
+    public static final int MODE_HTTP
+    public static final java.lang.String APPLICATION_VND_ANDROID_PACKAGE_ARCHIVE
+    public static final java.lang.String PREFERENCE_LOGLEVEL
+    public static final java.lang.String PREFERENCE_NOTFOUND
+    public static final java.lang.String DEV_SETTING
+    public static final java.lang.String OS_TYPE_NAME
+    public static final java.lang.String TRCODE_IMAGESTATUS
+    public static final java.lang.String TRCODE_SCHDLIST
+    public static final java.lang.String TRCODE_SCHDDTL
+    public static final java.lang.String TRCODE_SCHDMODY
+    public static final java.lang.String TRCODE_SCHDDEL
+    public static final java.lang.String TROCDE_CONTACT_LIST_PHONE
+    public static final java.lang.String JSON_HEADER
+    public static final java.lang.String INFO_TEXT
+    public static final java.lang.String ERROR_TEXT
+    public static final java.lang.String ERROR_CODE
+    public static final java.lang.String RESULT
+    public static final java.lang.String TRCODE
+    public static final java.lang.String SESSION_ID
+    public static final java.lang.String MESSAGE_VERSION
+    public static final java.lang.String JSON_BODY
+    public static final java.lang.String REQ_CLIENT_VERSION_CODE
+    public static final java.lang.String REQ_CLIENT_VERSION_NAME
+    public static final java.lang.String REQ_CLIENT_VERSION
+    public static final java.lang.String REQ_OS_TYPE
+    public static final java.lang.String REQ_OS_VESION
+    public static final java.lang.String REQ_MOBILE_NUM
+    public static final java.lang.String REQ_DEVICE_ID
+    public static final java.lang.String REQ_USER_ID
+    public static final java.lang.String REQ_PASSWORD
+    public static final java.lang.String RES_REMOTE_WIPE
+    public static final java.lang.String RES_PAGE_COUNT
+    public static final java.lang.String RES_EMAIL
+    public static final java.lang.String RES_MAIL_USER_ID
+    public static final java.lang.String RES_MAIL_SERVICE_ID
+    public static final java.lang.String APP_RESULT
+    public static final java.lang.String APP_FILENAME
+    public static final java.lang.String APP_MAJOR_VERSION
+    public static final java.lang.String APP_MINOR_VERSION
+    public static final java.lang.String APP_BUILD_VERSION
+    public static final java.lang.String CONTENT_RESULT
+    public static final java.lang.String CONTENT_MAJOR_FILENAME
+    public static final java.lang.String CONTENT_MINOR_FILENAME
+    public static final java.lang.String CONTENT_MAJOR_VERSION
+    public static final java.lang.String CONTENT_MINOR_VERSION
+    public static final java.lang.String META_RESULT
+    public static final java.lang.String META_MAJOR_FILENAME
+    public static final java.lang.String META_MINOR_FILENAME
+    public static final java.lang.String META_MINOR_VERSION
+    public static final java.lang.String META_MAJOR_VERSION
+    public static final java.lang.String CLIENT_VERSION
+    public static final java.lang.String USER_ID
+    public static final java.lang.String MOBILE_NUMBER
+    public static final java.lang.String DEVICE_ID
+    public static final java.lang.String OS_TYPE
+    public static final java.lang.String OS_VERSION
+    public static final java.lang.String DIVISION
+    public static final java.lang.String COMPANY
+    public static final java.lang.String DELAY_TIME
+    public static final java.lang.String COMPLETION_COUNT
+    public static final java.lang.String COMPLETION
+    public static final java.lang.String CONVERT_DOC_ID
+    public static final java.lang.String CONTACT_COUNT
+    public static final java.lang.String CONTACT_TOTAL_COUNT
+    public static final java.lang.String CONTACT_FAX_NUMBER
+    public static final java.lang.String CONTACT_DEPARMENT
+    public static final java.lang.String CONTACT_CONCURRENT
+    public static final java.lang.String CONTACT_COMPANY_TELEPHONE
+    public static final java.lang.String CONTACT_TITLE
+    public static final java.lang.String CONTACT_FULL_NAME
+    public static final java.lang.String CONTACT_COMPANY_NAME
+    public static final java.lang.String CONTACT_CONTACT_UID
+    public static final java.lang.String CONTACT_CONTACT_BOX_ID
+    public static final java.lang.String CONTACT_PHOTO_ID
+    public static final java.lang.String CONTACT_PHOTO_NAME
+    public static final java.lang.String CONTACT_MEMO
+    public static final java.lang.String CONTACT_MARRIAGE_ANNIVERSARY
+    public static final java.lang.String CONTACT_BIRTHDAY
+    public static final java.lang.String CONTACT_SECRETARY_TELEPHONE
+    public static final java.lang.String CONTACT_SECRETARY_NAME
+    public static final java.lang.String CONTACT_OTHER_COUNTRY
+    public static final java.lang.String CONTACT_OTHER_STREET_ADDRESS
+    public static final java.lang.String CONTACT_OTHER_CITY
+    public static final java.lang.String CONTACT_OTHER_STATE
+    public static final java.lang.String CONTACT_OTHER_POSTAL_CODE
+    public static final java.lang.String CONTACT_HOME_COUNTRY
+    public static final java.lang.String CONTACT_HOME_STREET_ADDRESS
+    public static final java.lang.String CONTACT_HOME_CITY
+    public static final java.lang.String CONTACT_HOME_STATE
+    public static final java.lang.String CONTACT_HOME_POSTAL_CODE
+    public static final java.lang.String CONTACT_HOME_TELEPHONE2
+    public static final java.lang.String CONTACT_HOME_TELEPHONE
+    public static final java.lang.String CONTACT_OFFICE_NAME
+    public static final java.lang.String CONTACT_WEBPAGE
+    public static final java.lang.String CONTACT_MOBILE_NUMBER
+    public static final java.lang.String CONTACT_EMAIL3
+    public static final java.lang.String CONTACT_EMAIL2
+    public static final java.lang.String CONTACT_EMAIL
+    public static final java.lang.String CONTACT_IM3
+    public static final java.lang.String CONTACT_IM2
+    public static final java.lang.String CONTACT_IM
+    public static final java.lang.String CONTACT_COMPANY_COUNTRY
+    public static final java.lang.String CONTACT_COMPANY_STREET_ADDRESS
+    public static final java.lang.String CONTACT_COMPANY_CITY
+    public static final java.lang.String CONTACT_COMPANY_STATE
+    public static final java.lang.String CONTACT_COMPANY_POSTAL_CODE
+    public static final java.lang.String CONTACT_COMPNAY_FAX
+    public static final java.lang.String CONTACT_COMPANY_TELEPHONE2
+    public static final java.lang.String CONTACT_DEPARTMENT
+    public static final java.lang.String CONTACT_NICK_NAME
+    public static final java.lang.String CONTACT_LAST_NAME
+    public static final java.lang.String CONTACT_FIRST_NAME
+    public static final java.lang.String CONTACT_CONTACT_BOX
+    242:242:public static java.lang.String getDownloadRootURL()
+com.mcnc.hsmart.def.TaskID
+com.mcnc.hsmart.download.BaseDownloadService:
+    private static final java.lang.String FILE_NAME_EXISTS
+    private static final java.lang.String FILE_NAME
+    private static final java.lang.String _0_9_1
+    private static final java.lang.String D_1_A_Z_A_Z_3_$
+com.mcnc.hsmart.download.DownloadServiceImpl:
+    private static final java.lang.String FILE_NAME2
+    private static final java.lang.String _0
+    private static final java.lang.String BEFORE_ASYNC_DOWNLOAD
+    private static final java.lang.String CURRENT_THREAD
+    private static final java.lang.String ASYNC_DOWNLOAD
+    private static final java.lang.String STRING_PERCENT
+    private static final java.lang.String AFTER_ASYNC_DOWNLOAD
+    private static final java.lang.String FILE_SIZE2
+    private static final java.lang.String DISPLAY_NAME
+    private static final java.lang.String URI
+    private static final java.lang.String PARAM
+    private static final java.lang.String REQUEST_URL
+    private static final java.lang.String COMM_SERVICE
+    private static final java.lang.String REQUEST
+    private static final java.lang.String SKIP_CNT
+    private static final java.lang.String FILE_SIZE
+    private static final java.lang.String PERCENT
+    private static final java.lang.String MS
+    private static final java.lang.String ELAPSED_TIME
+    private static final java.lang.String FILE_NAME
+    private static final java.lang.String ICON
+    private static final java.lang.String COM_MCNC_HSMART_DOWNLOAD_BROADCAST
+    private static final java.lang.String COM_MCNC_HSMART_DRAWABLE_STAT_SYS_DOWNLOAD_ANIM
+    private static final java.lang.String DOWNLOAD_COMPLETED2
+    private static final java.lang.String DOWNLOAD_COMPLETED
+    private static final java.lang.String COMM_MANAGER
+    private static final java.lang.String DO_IN_BACKGROUND
+    private static final java.lang.String REQ_CANCELED
+    private static final java.lang.String WILL_BE_DOWNLOADED
+    private static final int BUFFER_SIZE
+com.mcnc.hsmart.imageViewer.AttachFileManager
+com.mcnc.hsmart.imageViewer.IImageViewer:
+    public abstract void closeProgressDialog()
+com.mcnc.hsmart.imageViewer.IViewArea
+com.mcnc.hsmart.imageViewer.ImageEventSource:
+    735:736:public void setImageResult(boolean)
+    743:744:public void setImageCount(int)
+    759:760:public void setCompleted(boolean)
+    775:776:public void setResultCode(com.mcnc.hsmart.imageViewer.ImageEventSource$ResultCode)
+    783:784:public void setExcetion(java.lang.Exception)
+com.mcnc.hsmart.imageViewer.ImageViewer:
+    private static final java.lang.String TEXT_IMAGE_SELECTION_MENU_HOME
+    private static final java.lang.String TEXT_IMAGE_SELECTION_MENU_IMAGE_POST_FIX
+    private static final java.lang.String TEXT_IMAGE_SELECTION_MENU_MORE_IMAGE
+    private static final java.lang.String TEXT_IMAGE_NOPAGE
+    private static final java.lang.String TEXT_IMAGE_NOLIST
+    private static final java.lang.String TEXT_IMAGE_MOVEPAGE
+    private static final java.lang.String TEXT_IMAGE_LOAD_FAIL
+    private static final java.lang.String TEXT_IMAGE_WAIT
+    private static final java.lang.String TEXT_IMAGE_ENDOFLIST
+    public static final int COMMAND_OPEN_WAIT_DIALOG
+    public static final int COMMAND_CLOSE_WAIT_DIALOG
+    87:87:protected void onAction(android.view.View)
+com.mcnc.hsmart.imageViewer.ImageViewerController:
+    public static final int DEFAULT_GET_IMAGE_REQUST_RETRY_COUNT
+    public static final int DEFAULT_GET_IMAGE_REQUST_RETRY_DELAY_TIME
+    138:140:public void showDownloadedImageAlready(java.lang.String)
+com.mcnc.hsmart.imageViewer.ImageViewerModel:
+    private static final java.lang.String CURRENT_THREAD
+    private static final java.lang.String ASYNC_DOWNLOAD
+    private static final java.lang.String FILE_SIZE2
+    private static final java.lang.String URI
+    private static final java.lang.String FILE_SIZE
+    private static final java.lang.String FILE_NAME
+    private static final java.lang.String REQ_CANCELED
+    private static final java.lang.String MS
+    private static final java.lang.String SEND_REQUEST
+    private static final java.lang.String NO_ROUTE_TO_HOST
+    private static final java.lang.String NETWORK_UNREACHABLE
+    private static final java.lang.String RETRY_COUNT
+    private static final java.lang.String EXCEPTION_MSG
+    private static final java.lang.String EXCEPTION
+    private static final java.lang.String ELAPSED_TIME
+    private static final java.lang.String BYTES
+    private static final java.lang.String RESPONSE_BYTES_LENGTH
+    private static final java.lang.String REQUEST_URL
+    private static final java.lang.String MESSAGE
+    private static final java.lang.String PARAM
+    private static final java.lang.String REQUEST
+    private static final java.lang.String COMM_SERVICE
+    private static final java.lang.String COMM_MANAGER
+    private static final int SLEEPTIME
+    private static final int BUFFER_SIZE
+    private static final java.lang.String TAG
+com.mcnc.hsmart.imageViewer.ImageViewerTouch:
+    private static final java.lang.String TAG
+    private static final boolean D
+    private static final int NONE
+    private static final int DRAG
+    private static final int ZOOM
+    private static final int WIDTH
+    private static final int HEIGHT
+com.mcnc.hsmart.imageViewer.TopArea:
+    public static final int TYPE_TEXT
+    public static final int TYPE_NAVI
+    public static final int TYPE_NAVIBACK
+com.mcnc.hsmart.imageViewer.TopArea$TopView:
+    public static final int TITLE
+    public static final int PREV
+    public static final int NEXT
+    115:116:public com.mcnc.hsmart.imageViewer.TopArea$TopView setBackground(int)
+com.mcnc.hsmart.imageViewer.WebViewTypeImageContentView
+com.mcnc.hsmart.nativeApp.signature.SignatureActivity$MyView:
+    private static final float MINP
+    private static final float MAXP
+    private static final float TOUCH_TOLERANCE
+com.mcnc.hsmart.nativeApp.util.DialogUtility
+com.mcnc.hsmart.nativeApp.util.DialogUtility$1
+com.mcnc.hsmart.nativeApp.util.DialogUtility$10
+com.mcnc.hsmart.nativeApp.util.DialogUtility$11
+com.mcnc.hsmart.nativeApp.util.DialogUtility$11$1
+com.mcnc.hsmart.nativeApp.util.DialogUtility$2
+com.mcnc.hsmart.nativeApp.util.DialogUtility$2$1
+com.mcnc.hsmart.nativeApp.util.DialogUtility$3
+com.mcnc.hsmart.nativeApp.util.DialogUtility$3$1
+com.mcnc.hsmart.nativeApp.util.DialogUtility$4
+com.mcnc.hsmart.nativeApp.util.DialogUtility$5
+com.mcnc.hsmart.nativeApp.util.DialogUtility$6
+com.mcnc.hsmart.nativeApp.util.DialogUtility$6$1
+com.mcnc.hsmart.nativeApp.util.DialogUtility$7
+com.mcnc.hsmart.nativeApp.util.DialogUtility$8
+com.mcnc.hsmart.nativeApp.util.DialogUtility$9
+com.mcnc.hsmart.nativeApp.util.MenuHelper
+com.mcnc.hsmart.nativeApp.util.MenuHelper$1
+com.mcnc.hsmart.nativeApp.util.MenuHelper$2
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper:
+    19:21:public static android.app.ProgressDialog getDialog(android.content.Context)
+    25:46:public static void showProgressDialog(android.app.Activity,java.lang.Runnable)
+    49:70:public static void showLoginProgressDialog(android.app.Activity,java.lang.Runnable)
+    73:94:public static void showProgressDialog(android.app.Activity,java.lang.String,java.lang.Runnable)
+    121:158:public ProgressDialogHelper(android.app.ProgressDialog,java.lang.Object,java.lang.String,java.lang.Class[],java.lang.Object[])
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper$1
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper$1$1
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper$2
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper$2$1
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper$3
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper$3$1
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper$5
+com.mcnc.hsmart.nativeApp.util.ProgressDialogHelper$6
+com.mcnc.hsmart.nativeApp.util.StringUtil
+com.mcnc.hsmart.potal.DeviceRegistActivity:
+    private android.content.Context mContext
+com.mcnc.hsmart.potal.PotalLogic:
+    public static final java.lang.String DEVICE_REGIST
+    public static final java.lang.String DEVICE_TYPE
+    public static final java.lang.String MANUAL_NUMBER
+    private static final java.lang.String TAG
+    43:46:public static void setRestryConfig(java.lang.String,java.lang.String)
+    74:92:public static org.json.JSONObject makeLoginTR(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,boolean,java.lang.String,java.lang.String)
+com.mcnc.hsmart.potal.Upgrade20Task:
+    private static final java.lang.String APP_LOCATION
+    private static final java.lang.String APP_UPGRADE
+    private static final int DEFAULT_BUFFER_SIZE
+    private static final java.lang.String APP_KEY
+    private static final java.lang.String DEVICE_ID
+    private static final java.lang.String CONTENT_MINOR_VERSION
+    private static final java.lang.String APP_BUILD_VERSION
+    private static final java.lang.String APP_TESTER
+    private static final java.lang.String APP_MINOR_VERSION
+    private static final java.lang.String OS_VERSION
+    private static final java.lang.String CONTENT_MAJOR_VERSION
+    private static final java.lang.String APP_MAJOR_VERSION
+    private static final java.lang.String META_MINOR_VERSION
+    private static final java.lang.String OS_TYPE
+    private static final java.lang.String DISPLAY_TYPE
+    private static final java.lang.String META_MAJOR_VERSION
+    596:609:public boolean RestoreContent()
+    693:693:public void setVersionCheck()
+    742:742:private boolean AppUpgradeProcess(android.app.Activity,java.lang.String,java.lang.String)
+com.mcnc.hsmart.task.ActivityFinishTask:
+    private static final java.lang.String STOPPED
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String DO_IN_BACKGROUND
+com.mcnc.hsmart.task.BaseTask:
+    private static final java.lang.String MS
+    private static final java.lang.String SEND_REQUEST
+    private static final java.lang.String NO_ROUTE_TO_HOST
+    private static final java.lang.String NETWORK_UNREACHABLE
+    private static final java.lang.String RETRY_COUNT
+    private static final java.lang.String EXCEPTION_MSG
+    private static final java.lang.String EXCEPTION
+    private static final java.lang.String ELAPSED_TIME
+    private static final java.lang.String BYTES
+    private static final java.lang.String RESPONSE_BYTES_LENGTH
+    private static final java.lang.String REQUEST_URL
+    private static final java.lang.String MESSAGE
+    private static final java.lang.String PARAM
+    private static final java.lang.String REQUEST
+    private static final java.lang.String COMM_SERVICE
+    private static final java.lang.String COMM_MANAGER
+    private static final int SLEEPTIME
+    private static final int BUFFER_SIZE
+com.mcnc.hsmart.task.CameraCaptureTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String CALLBACK
+    private static final java.lang.String DIRECTORY
+    private static final java.lang.String PICTURE_NAME
+    public static final int CAMERA_CAPTURE
+com.mcnc.hsmart.task.CheckUseApplicationTask:
+    private static final java.lang.String RESULT
+    private static final java.lang.String PARAM
+    public static final int SKINVIEW_REQUEST_CODE
+com.mcnc.hsmart.task.ClearFStorageTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String DATA
+    private static final java.lang.String KEY
+    private static final java.lang.String VALUE
+com.mcnc.hsmart.task.ClearMStorageTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String DATA
+    private static final java.lang.String KEY
+    private static final java.lang.String VALUE
+com.mcnc.hsmart.task.DissmissPopupViewTask:
+    private static final java.lang.String STOPPED
+    private static final java.lang.String DISMISS_WEB_MODAL
+    private static final java.lang.String ACTION
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String DO_IN_BACKGROUND
+com.mcnc.hsmart.task.DissmissWebModalTask:
+    private static final java.lang.String STOPPED
+    private static final java.lang.String DISMISS_WEB_MODAL
+    private static final java.lang.String ACTION
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String DO_IN_BACKGROUND
+com.mcnc.hsmart.task.DownloadImageTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String URI
+    private static final java.lang.String DISPLAY_NAME
+    private static final java.lang.String CALLBACK
+com.mcnc.hsmart.task.FileCopyTask:
+    private static final java.lang.String REQUEST_LISTENER
+com.mcnc.hsmart.task.FileMoveTask:
+    private static final java.lang.String REQUEST_LISTENER
+com.mcnc.hsmart.task.FilesRemoveTask:
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.GetContactDefailTask:
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String DATA
+    private static final java.lang.String TR_CODE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String CONTACT_UID
+    private static final java.lang.String CONTACT_BOX_ID
+    private static final java.lang.String CALLBACK
+com.mcnc.hsmart.task.GetContactTask:
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String DATA
+    private static final java.lang.String TR_CODE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String SEARCH_TYPE
+    private static final java.lang.String SEARCH_TEXT
+    private static final java.lang.String CALLBACK
+com.mcnc.hsmart.task.GetDeviceInfoTask:
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.GetDirectoryInfoTask:
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.GetImagePickTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String CALLBACK
+com.mcnc.hsmart.task.GetImageTask:
+    private static final java.lang.String PARAM
+    private static final java.lang.String IMAGE_ID
+    private static final java.lang.String IMAGE_NAME
+    private static final java.lang.String IMAGE_TYPE
+    private static final java.lang.String CALLBACK
+com.mcnc.hsmart.task.GetNetworkInfoTask:
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.GotoAttachToImageTask:
+    private static final java.lang.String MS
+    private static final java.lang.String SEND_REQUEST
+    private static final java.lang.String NO_ROUTE_TO_HOST
+    private static final java.lang.String NETWORK_UNREACHABLE
+    private static final java.lang.String RETRY_COUNT
+    private static final java.lang.String EXCEPTION_MSG
+    private static final java.lang.String EXCEPTION
+    private static final java.lang.String ELAPSED_TIME
+    private static final java.lang.String BYTES
+    private static final java.lang.String RESPONSE_BYTES_LENGTH
+    private static final java.lang.String REQUEST_URL
+    private static final java.lang.String MESSAGE
+    private static final java.lang.String PARAM
+    private static final java.lang.String REQUEST
+    private static final java.lang.String COMM_SERVICE
+    private static final java.lang.String COMM_MANAGER
+    private static final int SLEEPTIME
+    private static final int BUFFER_SIZE
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.GotoFileUploadTask:
+    private static final java.lang.String CALLBACK
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER
+    private static final java.lang.String REQUEST_LISTENER
+    153:183:protected java.lang.String getImageData(android.app.Activity,java.lang.String)
+com.mcnc.hsmart.task.GotoSettingsTask:
+    public static final int REQUEST_CODE
+com.mcnc.hsmart.task.GotoSignatureTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+com.mcnc.hsmart.task.GotoWebModalTask:
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String DATA
+    private static final java.lang.String TR_CODE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.GotoWebTask:
+    private static final java.lang.String CALLBACK2
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String DATA
+    private static final java.lang.String TR_CODE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.ImageCaptureTask
+com.mcnc.hsmart.task.LogoutTask
+com.mcnc.hsmart.task.PopViewTask:
+    private static final java.lang.String CALLBACK
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String DATA
+    private static final java.lang.String TR_CODE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+    private static final java.lang.String POP_VIEW
+    private static final java.lang.String ACTION
+com.mcnc.hsmart.task.QrAndBarCodeTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String CALLBACK
+com.mcnc.hsmart.task.ReloadTask:
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String DATA
+    private static final java.lang.String TR_CODE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.RemoveFStorageTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String DATA
+    private static final java.lang.String KEY
+    private static final java.lang.String VALUE
+com.mcnc.hsmart.task.RemoveMStorageTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String DATA
+    private static final java.lang.String KEY
+    private static final java.lang.String VALUE
+com.mcnc.hsmart.task.ReplaceWebTask:
+    private static final java.lang.String CALLBACK2
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String DATA
+    private static final java.lang.String TR_CODE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+    private static final java.lang.String MESSAGE
+com.mcnc.hsmart.task.SMSExTask
+com.mcnc.hsmart.task.SMSTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String NUMBER
+    private static final java.lang.String MESSAGE
+com.mcnc.hsmart.task.SetFStorageTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String DATA
+    private static final java.lang.String KEY
+    private static final java.lang.String VALUE
+com.mcnc.hsmart.task.SetMStorageTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String DATA
+    private static final java.lang.String KEY
+    private static final java.lang.String VALUE
+com.mcnc.hsmart.task.SetSessionTimeoutTask:
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.SettingsActionTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String ACTION
+    private static final java.lang.String MESSAGE
+com.mcnc.hsmart.task.ShowImagePickTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String IMAGE_FILE_NAME
+    private static final java.lang.String IMAGE_URI
+com.mcnc.hsmart.task.ShowMapTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String LOCATION
+com.mcnc.hsmart.task.ShowMessageTask:
+    private static final java.lang.String PARAM
+com.mcnc.hsmart.task.ShowPopupViewTask:
+    private static final java.lang.String PARAM
+com.mcnc.hsmart.task.ShowSubViewTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+com.mcnc.hsmart.task.ShowWaitCursorTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String WAIT_TIME
+    private static final java.lang.String MESSAGE
+    private static final java.lang.String CALLBACK
+    private static final java.lang.String CANCELABLE
+    private static final java.lang.String ICON_MODE
+com.mcnc.hsmart.task.ShowWebModalTask:
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String DATA
+com.mcnc.hsmart.task.ShowWebTask:
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String DATA
+    private static final java.lang.String PARAM
+    private static final java.lang.String MESSAGE
+    private static final java.lang.String REQUEST_LISTENER
+com.mcnc.hsmart.task.ShowWebsiteTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String URI
+com.mcnc.hsmart.task.SqliteExcuteTask:
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.SqliteSelectTask:
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.hsmart.task.TelTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String NUMBER
+com.mcnc.hsmart.task.UploadFormDataTask:
+    122:144:protected java.lang.String imageResize(java.lang.String,java.lang.String,int)
+com.mcnc.hsmart.task.UploadImageDataTask:
+    173:185:public int exifOrientationToDegrees(int)
+    197:218:public android.graphics.Bitmap rotate(android.graphics.Bitmap,int)
+com.mcnc.hsmart.task.VersionCheckTask:
+    private static final java.lang.String APP_DOWN_LOAD_FAILED
+    private static final java.lang.String APP_SIZE
+    private static final java.lang.String APP_DOWN_LOAD_COMPLETED
+    private static final java.lang.String HTTP_SERVER_CONNECTED
+    private static final java.lang.String BASE_DIRECTORY
+    private static final java.lang.String APP_MANAGER_CALLED_FOR_APP_INATALLING
+    private static final java.lang.String APP_LOCATION
+    private static final java.lang.String MS
+    private static final java.lang.String APP_DOWN_LOAD_ELAPSED_TIME
+    private static final java.lang.String APP_UPGRADE_FAILED
+    private static final java.lang.String APP_UPGRADE
+    private static final java.lang.String APP_DOWN_LOAD
+    private static final int DEFAULT_BUFFER_SIZE
+    551:564:public boolean RestoreContent()
+    647:647:public void setVersionCheck()
+    690:690:private boolean AppUpgradeProcess(android.app.Activity,java.lang.String,java.lang.String)
+com.mcnc.hsmart.upload.BaseUploadService:
+    25:28:public void asyncUpload(com.mcnc.hsmart.core.common.Request)
+    abstract void beforeAsyncUpload(com.mcnc.hsmart.core.common.Request)
+    abstract void upload(com.mcnc.hsmart.core.common.Request)
+    abstract void afterAsyncUpload(com.mcnc.hsmart.core.common.Request)
+com.mcnc.hsmart.upload.UploadObject
+com.mcnc.hsmart.upload.UploadServiceImpl:
+    private static final java.lang.String FILE_NAME2
+    private static final java.lang.String _0
+    private static final java.lang.String BEFORE_ASYNC_DOWNLOAD
+    private static final java.lang.String CURRENT_THREAD
+    private static final java.lang.String ASYNC_DOWNLOAD
+    private static final java.lang.String STRING_PERCENT
+    private static final java.lang.String AFTER_ASYNC_DOWNLOAD
+    private static final java.lang.String FILE_SIZE2
+    private static final java.lang.String DISPLAY_NAME
+    private static final java.lang.String URI
+    private static final java.lang.String PARAM
+    private static final java.lang.String REQUEST_URL
+    private static final java.lang.String COMM_SERVICE
+    private static final java.lang.String REQUEST
+    private static final java.lang.String SKIP_CNT
+    private static final java.lang.String FILE_SIZE
+    private static final java.lang.String PERCENT
+    private static final java.lang.String MS
+    private static final java.lang.String ELAPSED_TIME
+    private static final java.lang.String FILE_NAME
+    private static final java.lang.String ICON
+    private static final java.lang.String COM_MCNC_HSMART_DOWNLOAD_BROADCAST
+    private static final java.lang.String COM_MCNC_HSMART_DRAWABLE_STAT_SYS_DOWNLOAD_ANIM
+    private static final java.lang.String DOWNLOAD_COMPLETED2
+    private static final java.lang.String DOWNLOAD_COMPLETED
+    private static final java.lang.String COMM_MANAGER
+    private static final java.lang.String DO_IN_BACKGROUND
+    private static final java.lang.String REQ_CANCELED
+    private static final java.lang.String WILL_BE_DOWNLOADED
+    private static final int BUFFER_SIZE
+    88:88:void beforeAsyncUpload(com.mcnc.hsmart.core.common.Request)
+    100:100:void upload(com.mcnc.hsmart.core.common.Request)
+    112:112:void afterAsyncUpload(com.mcnc.hsmart.core.common.Request)
+com.mcnc.hsmart.upload.UploadServiceImpl$_FakeX509TrustManager:
+    303:303:public boolean isClientTrusted(java.security.cert.X509Certificate[])
+    307:307:public boolean isServerTrusted(java.security.cert.X509Certificate[])
+com.mcnc.hsmart.util.ActivityObserver:
+    236:272:public void requestKillProcess(android.app.Activity)
+com.mcnc.hsmart.util.ActivityObserver$3
+com.mcnc.hsmart.util.ActivityStack:
+    19:19:public static java.util.ArrayList getActivityList()
+    24:28:public static android.app.Activity getActivity(int)
+    256:287:public static void gobackUrl(java.lang.String)
+com.mcnc.hsmart.util.AppConfigReader:
+    public static final java.lang.String TAG
+    192:226:public static org.json.JSONObject test()
+com.mcnc.hsmart.util.DialogUtility:
+    26:34:public static void alertNoneTitle(android.content.Context,java.lang.CharSequence)
+com.mcnc.hsmart.util.DialogUtility$2
+com.mcnc.hsmart.util.JsonUtil:
+    private static final java.lang.String TAG
+    164:188:public static java.lang.String getResponseErrorMessage(org.json.JSONObject)
+    245:262:public static boolean getResposeBooleanValue(org.json.JSONObject,java.lang.String)
+    268:288:public static org.json.JSONArray getResponseArrayValue(org.json.JSONObject,java.lang.String)
+com.mcnc.hsmart.util.RUtil:
+    private static final java.lang.String TAG
+    13:15:public static void setPackageName(java.lang.String)
+    18:19:public static java.lang.String getPackageName()
+com.mcnc.hsmart.util.ServiceReceiver$MyPhoneStateListener
+com.mcnc.hsmart.util.commUtil
+com.mcnc.hsmart.util.device.contact.AddressBookDetailItem:
+    108:109:public void setUID(java.lang.String)
+    114:115:public void setBoxId(java.lang.String)
+    124:124:public java.lang.String getMainNumberTitle()
+    127:128:public void setMainNumberTitle(java.lang.String)
+    130:130:public java.lang.String getMainNumber()
+    133:134:public void setMainNumber(java.lang.String)
+    136:136:public android.graphics.Bitmap getProfileImageBitmap()
+    156:156:public java.lang.String getImage()
+    168:168:public java.lang.String getDisplay_Method()
+    197:197:public java.lang.String getCompanyAddress()
+    249:249:public java.lang.String getHomeAddress()
+    269:269:public java.lang.String getOtherAddress()
+    282:282:public java.lang.String getAnniversary()
+    288:288:public java.lang.String getAdministrator()
+    297:298:public void setNickname(java.lang.String)
+    300:301:public void setImage(java.lang.String)
+    306:307:public void setCompany_Department(java.lang.String)
+    312:313:public void setDisplay_Method(java.lang.String)
+    318:319:public void setCompany_Tel2(java.lang.String)
+    339:340:public void setIM(java.lang.String)
+    342:343:public void setIM2(java.lang.String)
+    345:346:public void setIM3(java.lang.String)
+    351:352:public void setEmail2(java.lang.String)
+    354:355:public void setEmail3(java.lang.String)
+    360:361:public void setWebPage(java.lang.String)
+    363:364:public void setCompany_OfficeName(java.lang.String)
+    369:370:public void setHome_Tel2(java.lang.String)
+    372:373:public void setHome_Post(java.lang.String)
+    375:376:public void setHome_CityState(java.lang.String)
+    378:379:public void setHome_GuGunCity(java.lang.String)
+    381:382:public void setHome_DetailAddress(java.lang.String)
+    384:385:public void setHome_Country(java.lang.String)
+    387:388:public void setOther_Post(java.lang.String)
+    390:391:public void setOther_CityState(java.lang.String)
+    393:394:public void setOther_GuGunCity(java.lang.String)
+    396:397:public void setOther_DetailAddress(java.lang.String)
+    399:400:public void setOther_Country(java.lang.String)
+    402:403:public void setSecretary_Name(java.lang.String)
+    405:406:public void setSecretary_Tel(java.lang.String)
+    408:409:public void setBirthday(java.lang.String)
+    411:412:public void setAnniversary(java.lang.String)
+    414:415:public void setMemo(java.lang.String)
+    417:418:public void setAdministrator(java.lang.String)
+com.mcnc.hsmart.util.device.contact.AddressBookListItem:
+    public static final int TARGET_DEVICE_CONTACT
+    32:32:public java.lang.String getGrade()
+    36:37:public void setGrade(java.lang.String)
+    44:45:public void setDepart(java.lang.String)
+    48:49:public int getTotalCount()
+    57:58:public void setTotalCount(int)
+    61:62:public void setBoxPath(java.lang.String)
+com.mcnc.hsmart.util.device.contact.SearchHelperForDeviceContact:
+    568:642:public static java.util.ArrayList getGroupContacts(android.app.Activity,java.lang.String)
+com.mcnc.hsmart.util.device.contact.SimpleContactData
+com.mcnc.hsmart.util.device.qrcode.android.BaseLuminanceSource:
+    public abstract int getDataWidth()
+    public abstract int getDataHeight()
+    public abstract android.graphics.Bitmap renderCroppedGreyscaleBitmap()
+    public abstract android.graphics.Bitmap renderFullColorBitmap(boolean)
+com.mcnc.hsmart.util.device.qrcode.android.CaptureActivity:
+    private static final int SHARE_ID
+    private static final int HISTORY_ID
+    private static final int SETTINGS_ID
+    private static final int HELP_ID
+    private static final int ABOUT_ID
+    private static final long INTENT_RESULT_DURATION
+    private static final long BULK_MODE_SCAN_DELAY_MS
+    private static final float BEEP_VOLUME
+    private static final long VIBRATE_DURATION
+    private static final java.lang.String PACKAGE_NAME
+    private static final java.lang.String PRODUCT_SEARCH_URL_PREFIX
+    private static final java.lang.String PRODUCT_SEARCH_URL_SUFFIX
+    private static final java.lang.String ZXING_URL
+    private static final java.lang.String RETURN_CODE_PLACEHOLDER
+    private static final java.lang.String RETURN_URL_PARAM
+    private com.mcnc.hsmart.util.device.qrcode.android.InactivityTimer inactivityTimer
+com.mcnc.hsmart.util.device.qrcode.android.Contents$Format
+com.mcnc.hsmart.util.device.qrcode.android.Contents$Type
+com.mcnc.hsmart.util.device.qrcode.android.DecodeThread:
+    public static final java.lang.String BARCODE_BITMAP
+com.mcnc.hsmart.util.device.qrcode.android.HelpActivity:
+    private static final java.lang.String DEFAULT_URL
+com.mcnc.hsmart.util.device.qrcode.android.InactivityTimer
+com.mcnc.hsmart.util.device.qrcode.android.InactivityTimer$DaemonThreadFactory
+com.mcnc.hsmart.util.device.qrcode.android.Intents
+com.mcnc.hsmart.util.device.qrcode.android.Intents$Encode
+com.mcnc.hsmart.util.device.qrcode.android.Intents$Scan
+com.mcnc.hsmart.util.device.qrcode.android.Intents$SearchBookContents
+com.mcnc.hsmart.util.device.qrcode.android.Intents$Share
+com.mcnc.hsmart.util.device.qrcode.android.Intents$WifiConnect
+com.mcnc.hsmart.util.device.qrcode.android.InterleavedYUV422LuminanceSource
+com.mcnc.hsmart.util.device.qrcode.android.LocaleManager
+com.mcnc.hsmart.util.device.qrcode.android.PlanarYUVLuminanceSource:
+    114:114:public int getDataWidth()
+    119:119:public int getDataHeight()
+    147:147:public android.graphics.Bitmap renderFullColorBitmap(boolean)
+com.mcnc.hsmart.util.device.qrcode.android.PreferencesActivity:
+    public static final java.lang.String KEY_DECODE_1D
+    public static final java.lang.String KEY_DECODE_QR
+    public static final java.lang.String KEY_DECODE_DATA_MATRIX
+    public static final java.lang.String KEY_CUSTOM_PRODUCT_SEARCH
+    public static final java.lang.String KEY_PLAY_BEEP
+    public static final java.lang.String KEY_VIBRATE
+    public static final java.lang.String KEY_COPY_TO_CLIPBOARD
+    public static final java.lang.String KEY_FRONT_LIGHT
+    public static final java.lang.String KEY_BULK_MODE
+    public static final java.lang.String KEY_HELP_VERSION_SHOWN
+    public static final java.lang.String KEY_NOT_OUR_RESULTS_SHOWN
+com.mcnc.hsmart.util.device.qrcode.android.ViewfinderView:
+    private static final long ANIMATION_DELAY
+    private static final int OPAQUE
+com.mcnc.hsmart.util.device.qrcode.android.book.SearchBookContentsActivity:
+    private static final java.lang.String TAG
+    private static final java.lang.String USER_AGENT
+com.mcnc.hsmart.util.device.qrcode.android.camera.AutoFocusCallback:
+    private static final long AUTOFOCUS_INTERVAL_MS
+com.mcnc.hsmart.util.device.qrcode.android.camera.CameraConfigurationManager:
+    private static final int TEN_DESIRED_ZOOM
+    private static final int DESIRED_SHARPNESS
+com.mcnc.hsmart.util.device.qrcode.android.camera.CameraManager:
+    private static final int MIN_FRAME_WIDTH
+    private static final int MIN_FRAME_HEIGHT
+    private static final int MAX_FRAME_WIDTH
+    private static final int MAX_FRAME_HEIGHT
+com.mcnc.hsmart.util.device.qrcode.android.camera.FlashlightManager:
+    133:134:static void enableFlashlight()
+com.mcnc.hsmart.util.device.qrcode.android.encode.QRCodeEncoder:
+    85:85:public java.lang.String getContents()
+    97:97:public java.lang.String getFormat()
+com.mcnc.hsmart.util.device.qrcode.android.encode.QRCodeEncoder$EncodeThread:
+    private static final java.lang.String TAG
+com.mcnc.hsmart.util.device.qrcode.android.history.DBHelper:
+    private static final int DB_VERSION
+    private static final java.lang.String DB_NAME
+    static final java.lang.String TABLE_NAME
+    static final java.lang.String ID_COL
+    static final java.lang.String TEXT_COL
+    static final java.lang.String FORMAT_COL
+    static final java.lang.String DISPLAY_COL
+    static final java.lang.String TIMESTAMP_COL
+com.mcnc.hsmart.util.device.qrcode.android.history.HistoryManager:
+    private static final int MAX_ITEMS
+com.mcnc.hsmart.util.device.qrcode.android.result.AddressBookResultHandler:
+    48:59:private int mapIndexToAction(int)
+    88:88:public int getButtonCount()
+    93:104:public int getButtonText(int)
+    110:133:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.CalendarResultHandler:
+    51:51:public int getButtonCount()
+    56:56:public int getButtonText(int)
+    61:68:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.EmailAddressResultHandler:
+    42:42:public int getButtonCount()
+    47:47:public int getButtonText(int)
+    52:63:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.GeoResultHandler:
+    42:42:public int getButtonCount()
+    47:47:public int getButtonText(int)
+    52:61:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.ISBNResultHandler:
+    51:51:public int getButtonCount()
+    57:57:public int getButtonText(int)
+    62:78:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.ProductResultHandler:
+    50:50:public int getButtonCount()
+    55:55:public int getButtonText(int)
+    60:73:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.ResultButtonListener
+com.mcnc.hsmart.util.device.qrcode.android.result.ResultHandler:
+    public static final int MAX_BUTTON_COUNT
+    public abstract int getButtonCount()
+    public abstract int getButtonText(int)
+    public abstract void handleButtonPress(int)
+    115:115:public final com.mcnc.hsmart.util.device.qrcode.result.ParsedResultType getType()
+    127:136:final void addCalendarEvent(java.lang.String,java.lang.String,java.lang.String)
+    139:158:private static long calculateMilliseconds(java.lang.String)
+    166:185:final void addContact(java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    188:189:final void shareByEmail(java.lang.String)
+    192:193:final void sendEmail(java.lang.String,java.lang.String,java.lang.String)
+    197:202:final void sendEmailFromUri(java.lang.String,java.lang.String,java.lang.String)
+    205:207:final void shareBySMS(java.lang.String)
+    210:211:final void sendSMS(java.lang.String,java.lang.String)
+    214:219:final void sendSMSFromUri(java.lang.String,java.lang.String)
+    222:223:final void sendMMS(java.lang.String,java.lang.String,java.lang.String)
+    226:236:final void sendMMSFromUri(java.lang.String,java.lang.String,java.lang.String)
+    239:240:final void dialPhone(java.lang.String)
+    243:244:final void dialPhoneFromUri(java.lang.String)
+    247:248:final void openMap(java.lang.String)
+    257:262:final void searchMap(java.lang.String,java.lang.String)
+    265:267:final void getDirections(double,double)
+    271:274:final void openProductSearch(java.lang.String)
+    277:280:final void openBookSearch(java.lang.String)
+    283:287:final void searchBookContents(java.lang.String)
+    290:291:final void openURL(java.lang.String)
+    294:297:final void webSearch(java.lang.String)
+    300:311:void launchIntent(android.content.Intent)
+    314:317:private static void putExtra(android.content.Intent,java.lang.String,java.lang.String)
+com.mcnc.hsmart.util.device.qrcode.android.result.SMSResultHandler:
+    43:43:public int getButtonCount()
+    48:48:public int getButtonText(int)
+    53:62:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.TelResultHandler:
+    43:43:public int getButtonCount()
+    48:48:public int getButtonText(int)
+    53:64:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.TextResultHandler:
+    51:51:public int getButtonCount()
+    57:57:public int getButtonText(int)
+    62:78:public void handleButtonPress(int)
+com.mcnc.hsmart.util.device.qrcode.android.result.URIResultHandler:
+    45:45:public int getButtonCount()
+    50:50:public int getButtonText(int)
+    55:75:public void handleButtonPress(int)
+    83:83:private boolean isGoogleBooksURI()
+com.mcnc.hsmart.util.device.qrcode.android.share.BookmarkPickerActivity:
+    private static final int TITLE_COLUMN
+    private static final int URL_COLUMN
+    private static final java.lang.String BOOKMARK_SELECTION
+com.mcnc.hsmart.util.device.qrcode.android.share.ShareActivity:
+    private static final int PICK_BOOKMARK
+    private static final int PICK_CONTACT
+    private static final int METHODS_KIND_COLUMN
+    private static final int METHODS_DATA_COLUMN
+    private static final int PHONES_NUMBER_COLUMN
+com.mcnc.hsmart.util.device.qrcode.result.EmailAddressParsedResult:
+    41:41:public java.lang.String getEmailAddress()
+    45:45:public java.lang.String getSubject()
+    49:49:public java.lang.String getBody()
+    53:53:public java.lang.String getMailtoURI()
+com.mcnc.hsmart.util.device.qrcode.result.GeoParsedResult:
+    41:41:public java.lang.String getGeoURI()
+    48:48:public double getLatitude()
+    55:55:public double getLongitude()
+    62:62:public double getAltitude()
+com.mcnc.hsmart.util.device.qrcode.result.ISBNParsedResult:
+    35:35:public java.lang.String getISBN()
+com.mcnc.hsmart.util.device.qrcode.result.ProductParsedResult:
+    31:32:ProductParsedResult(java.lang.String)
+    41:41:public java.lang.String getProductID()
+    45:45:public java.lang.String getNormalizedProductID()
+com.mcnc.hsmart.util.device.qrcode.result.ResultParser:
+    95:99:protected static void maybeAppend(java.lang.String,java.lang.StringBuffer)
+    102:108:protected static void maybeAppend(java.lang.String[],java.lang.StringBuffer)
+com.mcnc.hsmart.util.device.qrcode.result.SMSParsedResult:
+    45:45:public java.lang.String getSMSURI()
+com.mcnc.hsmart.util.device.qrcode.result.TelParsedResult:
+    39:39:public java.lang.String getNumber()
+    43:43:public java.lang.String getTelURI()
+    47:47:public java.lang.String getTitle()
+com.mcnc.hsmart.util.device.qrcode.result.TextParsedResult:
+    40:40:public java.lang.String getText()
+    44:44:public java.lang.String getLanguage()
+com.mcnc.hsmart.util.device.qrcode.result.URIParsedResult:
+    37:37:public java.lang.String getURI()
+    41:41:public java.lang.String getTitle()
+    53:53:public boolean isPossiblyMaliciousURI()
+    58:70:private boolean containsUser()
+com.mcnc.hsmart.util.device.qrcode.result.optional.AbstractNDEFResultParser
+com.mcnc.hsmart.util.device.qrcode.result.optional.NDEFRecord
+com.mcnc.hsmart.util.device.qrcode.result.optional.NDEFSmartPosterParsedResult
+com.mcnc.hsmart.util.device.qrcode.result.optional.NDEFSmartPosterResultParser
+com.mcnc.hsmart.util.device.qrcode.result.optional.NDEFTextResultParser
+com.mcnc.hsmart.util.device.qrcode.result.optional.NDEFURIResultParser
+com.mcnc.hsmart.util.device.sqlite.sqliteUtil:
+    private static final java.lang.String DROP_TABLE
+    private static java.util.ArrayList CONTACT_DATAS
+    74:130:public static org.json.JSONObject selectQuery(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String[])
+    161:334:public static boolean insertAS0001(java.lang.String,java.lang.String,java.lang.String,org.json.JSONObject,android.app.Activity,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    346:515:public static boolean insertAP0001(java.lang.String,java.lang.String,java.lang.String,org.json.JSONObject,android.app.Activity)
+    521:543:public static java.lang.String hangulToJaso(java.lang.String)
+    552:568:public static void processContact(android.app.Activity,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.json.JSONObject)
+    571:584:private static void setMessageDlg(android.app.Activity,java.lang.String)
+    587:592:private static com.mcnc.hsmart.util.device.contact.SimpleContactData isContact(java.lang.String)
+com.mcnc.hsmart.util.device.sqlite.sqliteUtil$1
+com.mcnc.hsmart.view.ContextMenuButton:
+    56:57:public void setImageResource(int)
+    82:85:public void setVisibleIcon(boolean)
+    100:100:public static int getContextMenuButtonColor()
+com.mcnc.hsmart.view.DownloadListActivity:
+    private java.lang.Runnable viewOrders
+    86:86:protected void onAction(android.view.View)
+    512:512:public void startActivityForResult(com.phonegap.api.Plugin,android.content.Intent,int)
+com.mcnc.hsmart.view.HomeActivity:
+    public static final int MAIN_NUM
+    122:134:public void alertNoneTitleTwoButtonListener(android.app.Activity,java.lang.String,android.content.DialogInterface$OnClickListener,android.content.DialogInterface$OnClickListener)
+com.mcnc.hsmart.view.HomeActivity$2
+com.mcnc.hsmart.view.ImageViewActivity:
+    161:161:protected void onAction(android.view.View)
+    207:207:public void startActivityForResult(com.phonegap.api.Plugin,android.content.Intent,int)
+com.mcnc.hsmart.view.LoginActivity:
+    365:391:public void Auth()
+    475:512:public org.json.JSONObject makeLoginObject(java.lang.String,java.lang.String)
+    590:590:protected void onAction(android.view.View)
+    663:663:public void startActivityForResult(com.phonegap.api.Plugin,android.content.Intent,int)
+    686:734:private void upload()
+    738:774:void test6()
+com.mcnc.hsmart.view.MainActivity:
+    protected android.webkit.WebViewClient webViewClient
+    private static final java.lang.String TARGET_PAGE
+    505:526:protected void checkOrientation()
+    1010:1038:private void downloadTest(java.lang.String)
+    1319:1399:private void createContextMenu(org.json.JSONObject)
+    1402:1403:public void contextAnimation()
+    1702:1702:public boolean isModal()
+    1706:1707:public void setModal(boolean)
+    90:90:static synthetic com.mcnc.hsmart.core.common.Request access$1(com.mcnc.hsmart.view.MainActivity)
+    1:1:static synthetic void access$2(com.mcnc.hsmart.view.MainActivity,java.lang.String,com.mcnc.hsmart.core.common.Request,boolean,int)
+com.mcnc.hsmart.view.MainActivity$2
+com.mcnc.hsmart.view.MainActivity$2$1
+com.mcnc.hsmart.view.MainActivity$2$2
+com.mcnc.hsmart.view.MainActivity$3
+com.mcnc.hsmart.view.PopupViewActivity:
+    private static final int LOW_DPI_STATUS_BAR_HEIGHT
+    private static final int MEDIUM_DPI_STATUS_BAR_HEIGHT
+    private static final int HIGH_DPI_STATUS_BAR_HEIGHT
+    private static final int XHIGH_DPI_STATUS_BAR_HEIGHT
+com.mcnc.hsmart.viewer.ImageDownloadWorker
+com.mcnc.hsmart.viewer.ImageViewer
+com.mcnc.hsmart.viewer.ImageViewerTouch:
+    private static final java.lang.String TAG
+    private static final boolean D
+    private static final int NONE
+    private static final int DRAG
+    private static final int ZOOM
+    private static final int WIDTH
+    private static final int HEIGHT
+    private static final int MODE_WIDTH
+    private static final int MODE_HEIGHT
+    private static final int MODE_FIT
+    192:240:public void setImagePit()
+com.mcnc.hsmart.wrapper.ImageWrappter:
+    50:54:public static android.graphics.drawable.Drawable getDrawable(int,java.lang.String,android.content.Context)
+    74:74:public static java.lang.String getUri(int,java.lang.String)
+com.mcnc.parecis.bizmob.controller.ImpProcessController:
+    private static com.mcnc.parecis.bizmob.controller.ImpProcessController instance
+    private android.content.Context mContext
+    private static final java.lang.String DOWNLOAD_SERVICE_BINDING
+    private static final java.lang.String COM_MCNC_HSMART_DOWNLOAD_SERVICE
+    private static final java.lang.String ON_SERVICE_DISCONNECTED
+    private static final java.lang.String DOWNLOAD_SERVICE
+    private static final java.lang.String SERVICE
+    private static final java.lang.String ON_SERVICE_CONNECTED
+    private static final java.lang.String COM_MCNC_HSMART_UPLOAD_SERVICE
+    private static final java.lang.String UPLOAD_SERVICE_BINDING
+    59:59:public static com.mcnc.parecis.bizmob.controller.ImpProcessController getInstance()
+    149:150:public void setContext(android.content.Context)
+    153:155:public android.content.Context getContext()
+    1:1:public static bridge synthetic com.mcnc.hsmart.controller.Smart2ProcessController getInstance()
+com.mcnc.parecis.bizmob.def.TaskID
+com.mcnc.parecis.bizmob.nativeView.imageViewer.ImageItem:
+    15:20:public ImageItem(int,java.lang.String,java.lang.String)
+    40:41:protected void setImageUrl(java.lang.String)
+    44:45:protected void setPageNum(int)
+com.mcnc.parecis.bizmob.nativeView.imageViewer.ImageViewData:
+    40:57:public boolean initData(org.json.JSONObject)
+com.mcnc.parecis.bizmob.nativeView.imageViewer.XmlParserForImageConvert
+com.mcnc.parecis.bizmob.portal.Upgrade20Task:
+    private static final java.lang.String APP_LOCATION
+    private static final java.lang.String APP_UPGRADE
+    private static final int DEFAULT_BUFFER_SIZE
+    private static final java.lang.String APP_KEY
+    private static final java.lang.String DEVICE_ID
+    private static final java.lang.String CONTENT_MINOR_VERSION
+    private static final java.lang.String APP_BUILD_VERSION
+    private static final java.lang.String APP_TESTER
+    private static final java.lang.String APP_MINOR_VERSION
+    private static final java.lang.String OS_VERSION
+    private static final java.lang.String CONTENT_MAJOR_VERSION
+    private static final java.lang.String APP_MAJOR_VERSION
+    private static final java.lang.String META_MINOR_VERSION
+    private static final java.lang.String OS_TYPE
+    private static final java.lang.String DISPLAY_TYPE
+    private static final java.lang.String META_MAJOR_VERSION
+    578:591:public boolean RestoreContent()
+    675:675:public void setVersionCheck()
+    725:725:private boolean AppUpgradeProcess(android.app.Activity,java.lang.String,java.lang.String)
+com.mcnc.parecis.bizmob.task.AddContactGroupTask:
+    private static final java.lang.String RESULT
+    private static final java.lang.String PARAM
+    private static final java.lang.String GROUP_ID
+    private static final java.lang.String GROUP_NAME
+    private static final java.lang.String CALLBACK
+com.mcnc.parecis.bizmob.task.AddContactTask:
+    private static final java.lang.String RESULT
+    private static final java.lang.String PARAM
+    private static final java.lang.String CONTACT_NAME
+    private static final java.lang.String PHONE_NUMBER
+    private static final java.lang.String TEL_NUMBER
+    private static final java.lang.String GROUP_ID
+    private static final java.lang.String GROUP_NAME
+    private static final java.lang.String CALLBACK
+com.mcnc.parecis.bizmob.task.AddContactsTask
+com.mcnc.parecis.bizmob.task.AddContactsTask$1
+com.mcnc.parecis.bizmob.task.DelContactGroupTask
+com.mcnc.parecis.bizmob.task.DelContactGroupTask$1
+com.mcnc.parecis.bizmob.task.DelContactTask:
+    private static final java.lang.String RESULT
+    private static final java.lang.String PARAM
+    private static final java.lang.String CONTACT_UID
+    private static final java.lang.String CONTACT_NAME
+    private static final java.lang.String CALLBACK
+com.mcnc.parecis.bizmob.task.DownloadImageTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String URI
+    private static final java.lang.String DISPLAY_NAME
+    private static final java.lang.String CALLBACK
+com.mcnc.parecis.bizmob.task.DucuzenGetImageTask
+com.mcnc.parecis.bizmob.task.GotoAttachToDucuzenTask
+com.mcnc.parecis.bizmob.task.HasContactGroupTask:
+    private static final java.lang.String RESULT
+    private static final java.lang.String PARAM
+    private static final java.lang.String GROUP_ID
+    private static final java.lang.String GROUP_NAME
+    private static final java.lang.String CALLBACK
+com.mcnc.parecis.bizmob.task.LogoutTask
+com.mcnc.parecis.bizmob.task.LogoutTask$1
+com.mcnc.parecis.bizmob.task.ReloadTask:
+    private static final java.lang.String RESPONSE_SUCCESS
+    private static final java.lang.String RESULT_FALSE
+    private static final java.lang.String DATA
+    private static final java.lang.String TR_CODE
+    private static final java.lang.String RESULT
+    private static final java.lang.String HEADER2
+    private static final java.lang.String HEADER
+    private static final java.lang.String TARGET_PAGE
+    private static final java.lang.String REQUEST_LISTENER
+    private static final java.lang.String RESPONSE
+com.mcnc.parecis.bizmob.task.ShowPopupViewTask:
+    private static final java.lang.String PARAM
+com.mcnc.parecis.bizmob.task.SpeechRecognitionTask:
+    private static final java.lang.String SRC_ACTIVITY
+    private static final java.lang.String PARAM
+    private static final java.lang.String MESSAGE
+    private static final java.lang.String CALLBACK
+    public static final int SPEECH_RECOGNITION_REQUEST_CODE
+com.mcnc.parecis.bizmob.util.LMCServiceUtil
+com.mcnc.parecis.bizmob.util.LMCServiceUtil$1
+com.mcnc.parecis.bizmob.util.LMCServiceUtil$2
+com.mcnc.parecis.bizmob.util.LMCServiceUtil$3
+com.mcnc.parecis.bizmob.util.LMCServiceUtil$4
+com.mcnc.parecis.bizmob.util.ProjectUtils:
+    22:30:public static boolean isWifiConneted(android.content.Context)
+    34:45:public static boolean checkWifi(android.content.Context,java.lang.String)
+    71:114:public static java.lang.String copyFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+com.mcnc.parecis.bizmob.view.ImpLoginActivity:
+    private static final java.lang.String TARGET_PAGE
+com.mcnc.parecis.bizmob.view.ImpMainActivity:
+    private static final java.lang.String TARGET_PAGE
+    276:277:protected void checkOrientation()
+    1083:1084:public void contextAnimation()
+    1371:1393:void CheckGC(java.lang.String)
+    1404:1442:protected void fitHeaderLayer()
+com.mcnc.parecis.bizmob.view.PopupViewActivity:
+    private static final int LOW_DPI_STATUS_BAR_HEIGHT
+    private static final int MEDIUM_DPI_STATUS_BAR_HEIGHT
+    private static final int HIGH_DPI_STATUS_BAR_HEIGHT
+    private static final int XHIGH_DPI_STATUS_BAR_HEIGHT
+com.mcnc.parecis.bizmob.view.TabMainActivity:
+    private static final java.lang.String TARGET_PAGE
+    300:301:protected void checkOrientation()
+    1289:1377:private void createContextMenu(org.json.JSONObject)
+    1467:1468:public void contextAnimation()
+    75:75:static synthetic android.widget.LinearLayout access$1(com.mcnc.parecis.bizmob.view.TabMainActivity)
+    75:75:static synthetic android.view.animation.Animation access$2(com.mcnc.parecis.bizmob.view.TabMainActivity)
+com.mcnc.parecis.bizmob.view.TabMainActivity$2
+com.mcnc.parecis.univera.BuildConfig
+com.mcnc.parecis.univera.Manifest
+com.mcnc.parecis.univera.Manifest$permission
+com.mcnc.parecis.univera.R
+com.mcnc.parecis.univera.R$anim
+com.mcnc.parecis.univera.R$array
+com.mcnc.parecis.univera.R$attr
+com.mcnc.parecis.univera.R$color
+com.mcnc.parecis.univera.R$drawable
+com.mcnc.parecis.univera.R$id
+com.mcnc.parecis.univera.R$layout
+com.mcnc.parecis.univera.R$raw
+com.mcnc.parecis.univera.R$string
+com.mcnc.parecis.univera.R$style
+com.mcnc.parecis.univera.R$xml
+com.phonegap.AccelListener
+com.phonegap.App
+com.phonegap.AudioHandler
+com.phonegap.AudioPlayer
+com.phonegap.BrowserKey:
+    android.webkit.WebView mView
+    31:34:public void override()
+    37:37:public boolean isBound()
+    41:42:public void reset()
+    45:46:public void exitApp()
+com.phonegap.CallbackServer:
+    127:127:public boolean usePolling()
+    136:136:public int getPort()
+    146:146:public java.lang.String getToken()
+    167:171:public void restartServer()
+    307:309:public int getSize()
+com.phonegap.CameraLauncher
+com.phonegap.CompassListener
+com.phonegap.ContactAccessor
+com.phonegap.ContactAccessor$WhereOptions
+com.phonegap.ContactAccessorSdk3_4
+com.phonegap.ContactAccessorSdk5
+com.phonegap.ContactManager
+com.phonegap.CryptoHandler
+com.phonegap.Device
+com.phonegap.DirectoryManager
+com.phonegap.FileTransfer
+com.phonegap.FileTransfer$1
+com.phonegap.FileTransfer$2
+com.phonegap.FileUploadResult
+com.phonegap.FileUtils
+com.phonegap.GeoBroker
+com.phonegap.GeoListener
+com.phonegap.GpsListener
+com.phonegap.HttpHandler
+com.phonegap.NetworkListener
+com.phonegap.NetworkManager
+com.phonegap.Notification
+com.phonegap.Notification$1
+com.phonegap.Notification$1$1
+com.phonegap.Notification$2
+com.phonegap.Notification$2$1
+com.phonegap.Notification$2$2
+com.phonegap.Notification$2$3
+com.phonegap.Notification$3
+com.phonegap.Notification$3$1
+com.phonegap.Notification$4
+com.phonegap.Notification$4$1
+com.phonegap.SimpleCrypto
+com.phonegap.Storage
+com.phonegap.TempListener
+com.phonegap.WebViewReflect:
+    30:48:private static void setDatabaseEnabled(boolean)
+com.phonegap.api.IPlugin:
+    public abstract com.phonegap.api.PluginResult execute(java.lang.String,org.json.JSONArray,java.lang.String)
+    public abstract boolean isSynch(java.lang.String)
+    public abstract void setContext(com.phonegap.api.PhonegapActivity)
+    public abstract void setView(android.webkit.WebView)
+    public abstract void onPause()
+    public abstract void onResume()
+    public abstract void onDestroy()
+    public abstract void onActivityResult(int,int,android.content.Intent)
+com.phonegap.api.PhonegapActivity:
+    public abstract void addService(java.lang.String,java.lang.String)
+    public abstract void startActivityForResult(com.phonegap.api.Plugin,android.content.Intent,int)
+com.phonegap.api.Plugin:
+    102:103:public void sendJavascript(java.lang.String)
+    116:117:public void success(com.phonegap.api.PluginResult,java.lang.String)
+    126:127:public void error(com.phonegap.api.PluginResult,java.lang.String)
+com.phonegap.api.PluginManager:
+    209:214:public com.phonegap.api.Plugin addPlugin(java.lang.String)
+com.phonegap.api.PluginResult:
+    24:27:public PluginResult(com.phonegap.api.PluginResult$Status,java.lang.String)
+    29:33:public PluginResult(com.phonegap.api.PluginResult$Status,org.json.JSONArray,java.lang.String)
+    35:38:public PluginResult(com.phonegap.api.PluginResult$Status,org.json.JSONArray)
+    40:43:public PluginResult(com.phonegap.api.PluginResult$Status,org.json.JSONObject)
+    45:48:public PluginResult(com.phonegap.api.PluginResult$Status,int)
+    50:53:public PluginResult(com.phonegap.api.PluginResult$Status,float)
+    55:58:public PluginResult(com.phonegap.api.PluginResult$Status,boolean)
+    61:62:public void setKeepCallback(boolean)
+    69:69:public java.lang.String getMessage()
+org.apache.commons.codec.BinaryDecoder
+org.apache.commons.codec.BinaryEncoder
+org.apache.commons.codec.CharEncoding
+org.apache.commons.codec.Decoder
+org.apache.commons.codec.DecoderException
+org.apache.commons.codec.Encoder
+org.apache.commons.codec.EncoderException
+org.apache.commons.codec.StringDecoder
+org.apache.commons.codec.StringEncoder
+org.apache.commons.codec.StringEncoderComparator
+org.apache.commons.codec.binary.Base64:
+    private static final int DEFAULT_BUFFER_RESIZE_FACTOR
+    private static final int DEFAULT_BUFFER_SIZE
+    static final int CHUNK_SIZE
+    private static final byte PAD
+    private static final int MASK_6BITS
+    private static final int MASK_8BITS
+    266:267:public Base64(int)
+    292:293:public Base64(int,byte[])
+    357:357:boolean hasData()
+    539:586:void decode(byte[],int,int)
+    610:615:public static boolean isArrayByteBase64(byte[])
+    654:654:public static java.lang.String encodeBase64String(byte[])
+    667:667:public static byte[] encodeBase64URLSafe(byte[])
+    680:680:public static java.lang.String encodeBase64URLSafeString(byte[])
+    691:691:public static byte[] encodeBase64Chunked(byte[])
+    705:710:public java.lang.Object decode(java.lang.Object)
+    723:723:public byte[] decode(java.lang.String)
+    734:752:public byte[] decode(byte[])
+    830:830:public static byte[] decodeBase64(java.lang.String)
+    841:841:public static byte[] decodeBase64(byte[])
+    853:868:static byte[] discardWhitespace(byte[])
+    879:886:private static boolean isWhiteSpace(byte)
+    903:906:public java.lang.Object encode(java.lang.Object)
+    918:918:public java.lang.String encodeToString(byte[])
+    992:992:public static java.math.BigInteger decodeInteger(byte[])
+    1006:1009:public static byte[] encodeInteger(java.math.BigInteger)
+    1020:1040:static byte[] toIntegerBytes(java.math.BigInteger)
+org.apache.commons.codec.binary.Base64InputStream
+org.apache.commons.codec.binary.Base64OutputStream
+org.apache.commons.codec.binary.BinaryCodec
+org.apache.commons.codec.binary.Hex
+org.apache.commons.codec.binary.StringUtils:
+    49:49:public static byte[] getBytesIso8859_1(java.lang.String)
+    65:65:public static byte[] getBytesUsAscii(java.lang.String)
+    81:81:public static byte[] getBytesUtf16(java.lang.String)
+    97:97:public static byte[] getBytesUtf16Be(java.lang.String)
+    113:113:public static byte[] getBytesUtf16Le(java.lang.String)
+    129:129:public static byte[] getBytesUtf8(java.lang.String)
+    152:158:public static byte[] getBytesUnchecked(java.lang.String,java.lang.String)
+    206:206:public static java.lang.String newStringIso8859_1(byte[])
+    220:220:public static java.lang.String newStringUsAscii(byte[])
+    234:234:public static java.lang.String newStringUtf16(byte[])
+    248:248:public static java.lang.String newStringUtf16Be(byte[])
+    262:262:public static java.lang.String newStringUtf16Le(byte[])
+org.apache.commons.codec.digest.DigestUtils
+org.apache.commons.codec.language.Caverphone
+org.apache.commons.codec.language.DoubleMetaphone
+org.apache.commons.codec.language.DoubleMetaphone$DoubleMetaphoneResult
+org.apache.commons.codec.language.Metaphone
+org.apache.commons.codec.language.RefinedSoundex
+org.apache.commons.codec.language.Soundex
+org.apache.commons.codec.language.SoundexUtils
+org.apache.commons.codec.net.BCodec
+org.apache.commons.codec.net.QCodec
+org.apache.commons.codec.net.QuotedPrintableCodec
+org.apache.commons.codec.net.RFC1522Codec
+org.apache.commons.codec.net.URLCodec
+org.apache.commons.codec.net.Utils
+org.apache.commons.io.CopyUtils
+org.apache.commons.io.DirectoryWalker
+org.apache.commons.io.DirectoryWalker$CancelException
+org.apache.commons.io.EndianUtils
+org.apache.commons.io.FileCleaner
+org.apache.commons.io.FileCleaningTracker
+org.apache.commons.io.FileCleaningTracker$Reaper
+org.apache.commons.io.FileCleaningTracker$Tracker
+org.apache.commons.io.FileDeleteStrategy
+org.apache.commons.io.FileDeleteStrategy$ForceFileDeleteStrategy
+org.apache.commons.io.FileSystemUtils
+org.apache.commons.io.FileUtils
+org.apache.commons.io.FilenameUtils
+org.apache.commons.io.HexDump
+org.apache.commons.io.IOCase
+org.apache.commons.io.IOExceptionWithCause
+org.apache.commons.io.IOUtils
+org.apache.commons.io.LineIterator
+org.apache.commons.io.comparator.DefaultFileComparator
+org.apache.commons.io.comparator.ExtensionFileComparator
+org.apache.commons.io.comparator.LastModifiedFileComparator
+org.apache.commons.io.comparator.NameFileComparator
+org.apache.commons.io.comparator.PathFileComparator
+org.apache.commons.io.comparator.ReverseComparator
+org.apache.commons.io.comparator.SizeFileComparator
+org.apache.commons.io.filefilter.AbstractFileFilter
+org.apache.commons.io.filefilter.AgeFileFilter
+org.apache.commons.io.filefilter.AndFileFilter
+org.apache.commons.io.filefilter.CanReadFileFilter
+org.apache.commons.io.filefilter.CanWriteFileFilter
+org.apache.commons.io.filefilter.ConditionalFileFilter
+org.apache.commons.io.filefilter.DelegateFileFilter
+org.apache.commons.io.filefilter.DirectoryFileFilter
+org.apache.commons.io.filefilter.EmptyFileFilter
+org.apache.commons.io.filefilter.FalseFileFilter
+org.apache.commons.io.filefilter.FileFileFilter
+org.apache.commons.io.filefilter.FileFilterUtils
+org.apache.commons.io.filefilter.HiddenFileFilter
+org.apache.commons.io.filefilter.IOFileFilter
+org.apache.commons.io.filefilter.NameFileFilter
+org.apache.commons.io.filefilter.NotFileFilter
+org.apache.commons.io.filefilter.OrFileFilter
+org.apache.commons.io.filefilter.PrefixFileFilter
+org.apache.commons.io.filefilter.RegexFileFilter
+org.apache.commons.io.filefilter.SizeFileFilter
+org.apache.commons.io.filefilter.SuffixFileFilter
+org.apache.commons.io.filefilter.TrueFileFilter
+org.apache.commons.io.filefilter.WildcardFileFilter
+org.apache.commons.io.filefilter.WildcardFilter
+org.apache.commons.io.input.AutoCloseInputStream
+org.apache.commons.io.input.CharSequenceReader
+org.apache.commons.io.input.ClassLoaderObjectInputStream
+org.apache.commons.io.input.CloseShieldInputStream
+org.apache.commons.io.input.ClosedInputStream
+org.apache.commons.io.input.CountingInputStream
+org.apache.commons.io.input.DemuxInputStream
+org.apache.commons.io.input.NullInputStream
+org.apache.commons.io.input.NullReader
+org.apache.commons.io.input.ProxyInputStream
+org.apache.commons.io.input.ProxyReader
+org.apache.commons.io.input.SwappedDataInputStream
+org.apache.commons.io.input.TeeInputStream
+org.apache.commons.io.output.ByteArrayOutputStream
+org.apache.commons.io.output.CloseShieldOutputStream
+org.apache.commons.io.output.ClosedOutputStream
+org.apache.commons.io.output.CountingOutputStream
+org.apache.commons.io.output.DeferredFileOutputStream
+org.apache.commons.io.output.DemuxOutputStream
+org.apache.commons.io.output.FileWriterWithEncoding
+org.apache.commons.io.output.LockableFileWriter
+org.apache.commons.io.output.NullOutputStream
+org.apache.commons.io.output.NullWriter
+org.apache.commons.io.output.ProxyOutputStream
+org.apache.commons.io.output.ProxyWriter
+org.apache.commons.io.output.TeeOutputStream
+org.apache.commons.io.output.ThresholdingOutputStream

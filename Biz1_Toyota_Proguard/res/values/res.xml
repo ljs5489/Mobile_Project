@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources> 
+    <item type="id" name="action"/>
+    <item type="id" name="actionType"/>
+    <item type="id" name="control_id"/> 
+    <item type="id" name="control_seq"/>  
+</resources> 

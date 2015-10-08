@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+		
+	<!-- Server Section -->
+	<LinearLayout  android:orientation="vertical"
+		           android:layout_width="fill_parent"
+		           android:layout_height="wrap_content" 
+		           android:padding="5dip" >
+		<TextView  android:id="@+id/id_section_server1"
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:text="Server 정보" 
+			       android:textStyle="bold"
+			       android:textSize="16sp" 
+			       android:typeface="sans" 
+			       android:textColor="#ffc300">
+		</TextView>	
+		
+		<!-- 접속IP -->
+		<LinearLayout android:orientation="horizontal"
+			          android:layout_height="wrap_content"
+			          android:layout_width="fill_parent" 
+			          android:layout_marginTop="8dip" >
+			
+			<TextView android:id="@+id/id_configuration_Network_AccessIPTextView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="IP : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView> 
+				
+			<EditText android:id="@+id/id_configuration_Network_AccessIPEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="textUri" >
+			</EditText>	
+		</LinearLayout> <!-- 접속IP -->
+		
+		<!-- 접속Port -->
+		<LinearLayout android:orientation="horizontal"
+			          android:layout_height="wrap_content"
+			          android:layout_width="fill_parent" 
+			          android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Network_AccessPortTextView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="Port : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView>
+				
+			<EditText android:id="@+id/id_configuration_Network_AccessPortEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="number" >
+			</EditText>	
+		</LinearLayout> <!-- 접속Port -->
+		
+		<!-- ServerContextRoot -->
+		<LinearLayout android:id="@+id/id_configuration_contextRoot_layout"
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_contextRootTextView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="Context : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_contextRootEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="textUri" >
+			</EditText>	
+		</LinearLayout> <!-- ServerContextRoot -->
+		
+		<!-- Server SSL -->
+		<LinearLayout android:id="@+id/id_configuration_Network_ssl_layout"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Network_SSLView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="SSL : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView>	
+			<LinearLayout android:layout_height="wrap_content"
+		                  android:id="@+id/linearLayout0"
+		                  android:orientation="horizontal"
+		                  android:layout_width="fill_parent">
+		                  <RadioGroup android:layout_height="wrap_content"
+			                          android:layout_width="wrap_content"
+			                          android:orientation="horizontal"
+			                          android:id="@+id/radioGroupServerSSL">
+			                          <RadioButton android:id="@+id/radioServerSSLTrue"
+			                                       android:layout_width="wrap_content"
+			                                       android:layout_height="wrap_content"
+			                                       android:text="true" >
+			                          </RadioButton>
+			                          <RadioButton android:text="false"
+				                                   android:layout_width="wrap_content"
+				                                   android:id="@+id/radioServerSSLFalse"
+				                                   android:layout_height="wrap_content">
+			                          </RadioButton>
+		                  </RadioGroup>
+	        </LinearLayout>
+			
+			<!-- 
+	        <EditText android:id="@+id/id_configuration_Network_SslEditText"
+				      android:layout_height="wrap_content" 
+				      android:layout_width="0dip"
+				      android:layout_weight="1" 
+				      android:inputType="textEmailAddress" >
+			</EditText>
+			 -->	
+		</LinearLayout> <!-- Server SSL -->
+	</LinearLayout>	 <!-- Server Section -->
+	
+	<!-- Upgrade Section -->	                
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip" >
+		<TextView android:id="@+id/id_section_server2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Upgrade 정보" 
+			android:textStyle="bold"
+			android:textSize="16sp" 
+			android:typeface="sans" 
+			android:textColor="#ffc300" >
+		</TextView>	
+		
+		<!-- Upgrade IP -->
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Network_downloadURL_layout"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="IP : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888">
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_Network_downloadURLEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="textUri" >
+			</EditText>	
+		</LinearLayout> <!-- Upgrade IP -->
+		
+		<!-- Upgrade Port -->
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Network_downloadPortTextView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="Port : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_Network_downloadPortEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="number" >
+			</EditText>	
+		</LinearLayout> <!-- Upgrade Port -->
+		
+		<!-- Upgrade Content -->
+		<LinearLayout android:id="@+id/id_configuration_Network_downloadContext_layout"
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Network_downloadContextTextView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="Context : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_Network_downloadContextEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="textUri" >
+			</EditText>	
+		</LinearLayout> <!-- Upgrade Content -->
+		
+		<!-- Upgrade SSL -->
+		<LinearLayout android:id="@+id/id_configuration_Network_downloadSsl_layout"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Network_downloadSslView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="SSL : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView>
+			
+			<LinearLayout android:layout_height="wrap_content"
+		                  android:id="@+id/linearLayout1"
+		                  android:orientation="horizontal"
+		                  android:layout_width="fill_parent">
+		                  <RadioGroup android:layout_height="wrap_content"
+			                          android:layout_width="wrap_content"
+			                          android:orientation="horizontal"
+			                          android:id="@+id/radioGroupUpgradeSSL">
+			                          <RadioButton android:id="@+id/radioUpdateSSLTrue"
+			                                       android:layout_width="wrap_content"
+			                                       android:layout_height="wrap_content"
+			                                       android:text="true" >
+			                          </RadioButton>
+			                          <RadioButton android:text="false"
+				                                   android:layout_width="wrap_content"
+				                                   android:id="@+id/radioUpdateSSLFalse"
+				                                   android:layout_height="wrap_content">
+			                          </RadioButton>
+		                  </RadioGroup>
+	        </LinearLayout>
+				
+			<!-- 
+			<EditText android:id="@+id/id_configuration_Network_downloadSslEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="textEmailAddress" >
+			</EditText>
+			 -->	
+		</LinearLayout> <!-- Upgrade SSL -->
+	</LinearLayout> <!-- Upgrade Section -->
+	
+	<!-- Log Level Section -->
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:padding="5dip">
+		<TextView android:id="@+id/id_section_server3"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Log Level 정보" 
+			android:textStyle="bold"
+			android:textSize="16sp" 
+			android:typeface="sans" 
+			android:textColor="#ffc300" >
+		</TextView>	
+		
+		<!-- Log Level -->
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Network_loglevelView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="Level : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_Network_loglevelEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="number" >
+			</EditText>	
+		</LinearLayout> <!-- 접속IP -->
+	</LinearLayout> <!-- Log Level Section -->
+	
+	<!-- Content Mode Section -->
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:padding="5dip">
+		<TextView android:id="@+id/id_section_contentmode"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Content Mode 정보 ( local, web)" 
+			android:textStyle="bold"
+			android:textSize="16sp" 
+			android:typeface="sans" 
+			android:textColor="#ffc300" >
+		</TextView>	
+		
+		<!-- Content Mode -->
+		<LinearLayout 
+		    android:id="@+id/id_configuration_imageMode_layout"
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_imageModeTextView"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:text="Mode : " 
+				android:textStyle="bold"
+				android:textSize="16sp" 
+				android:typeface="sans" 
+				android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_imageModeEditText"
+				android:layout_height="wrap_content" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:inputType="textUri" >
+			</EditText>	
+		</LinearLayout> <!-- Content Mode -->
+    </LinearLayout> <!-- Content Mode Section -->
+
+	<!-- Web Resource Section -->
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:padding="5dip">
+		<TextView android:id="@+id/id_section_webresource"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Web Resource 정보" 
+			android:textStyle="bold"
+			android:textSize="16sp" 
+			android:typeface="sans" 
+			android:textColor="#ffc300" >
+		</TextView>	
+		
+		<!-- Web Resource URL -->
+		<LinearLayout 
+		    android:id="@+id/id_configuration_Network_resourceUrl_layout"
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent" 
+			android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Network_ResourceUrlTextView"
+				      android:layout_width="80dip"
+				      android:layout_height="wrap_content"
+				      android:text="URL : " 
+				      android:textStyle="bold"
+				      android:textSize="16sp" 
+				      android:typeface="sans" 
+				      android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_Network_resourceUrlEditText"
+				      android:layout_height="wrap_content" 
+				      android:layout_width="0dip"
+				      android:layout_weight="1" 
+				      android:inputType="textUri" >
+			</EditText>	
+		</LinearLayout> <!-- Web Resource URL -->
+	</LinearLayout> <!-- Web Resource Section -->
+	
+	<!-- 컨텐츠 URL 
+	<LinearLayout android:orientation="vertical"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content" 
+		          android:layout_marginTop="8dip" >
+		<TextView android:id="@+id/id_section_contenturl"
+			      android:layout_width="fill_parent"
+			      android:layout_height="wrap_content"
+			      android:text="Content URL 정보" 
+			      android:textStyle="bold"
+			      android:textSize="16sp" 
+			      android:typeface="sans" 
+			      android:textColor="#ffc300" >
+		</TextView>	
+		
+		<LinearLayout android:id="@+id/id_configuration_contentsRoot_layout"
+			          android:orientation="horizontal"
+			          android:layout_height="wrap_content"
+			          android:layout_width="fill_parent" 
+			          android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_contentsRootTextView"
+				      android:layout_width="80dip"
+				      android:layout_height="wrap_content"
+				      android:text="Mode : " 
+				      android:textStyle="bold"
+				      android:textSize="16sp" 
+				      android:typeface="sans" 
+				      android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_contentsRootEditText"
+				      android:layout_height="wrap_content" 
+				      android:layout_width="0dip"
+				      android:layout_weight="1" 
+				      android:inputType="textEmailAddress" >
+			</EditText>	
+		</LinearLayout> 
+	</LinearLayout>  -->
+	
+	<!-- Push Section -->
+	<LinearLayout android:orientation="vertical"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content" 
+		          android:padding="5dip">
+		<TextView android:id="@+id/id_section_push"
+			      android:layout_width="fill_parent"
+			      android:layout_height="wrap_content"
+			      android:text="Push 정보" 
+			      android:textStyle="bold"
+			      android:textSize="16sp" 
+			      android:typeface="sans" 
+			      android:textColor="#ffc300" >
+		</TextView>	
+		
+		<!-- Push IP -->
+		<LinearLayout android:orientation="horizontal"
+			          android:layout_height="wrap_content"
+			          android:layout_width="fill_parent" 
+			          android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Push_AccessIPTextView"
+				      android:layout_width="80dip"
+				      android:layout_height="wrap_content"
+				      android:text="IP : " 
+				      android:textStyle="bold"
+				      android:textSize="16sp" 
+				      android:typeface="sans" 
+				      android:textColor="#FF888888" >
+			</TextView>
+				
+			<EditText android:id="@+id/id_configuration_Push_AccessIPEditText"
+				      android:layout_height="wrap_content" 
+				      android:layout_width="0dip"
+				      android:layout_weight="1" 
+				      android:inputType="textUri" >
+			</EditText>	
+		</LinearLayout> <!-- Push IP -->
+		
+		<!-- 접속Port -->
+		<LinearLayout android:orientation="horizontal"
+			          android:layout_height="wrap_content"
+			          android:layout_width="fill_parent" 
+			          android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Push_AccessPortTextView"
+				      android:layout_width="80dip"
+				      android:layout_height="wrap_content"
+				      android:text="Port : " 
+				      android:textStyle="bold"
+				      android:textSize="16sp" 
+				      android:typeface="sans" 
+				      android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_Push_AccessPortEditText"
+				      android:layout_height="wrap_content" 
+				      android:layout_width="0dip"
+				      android:layout_weight="1" 
+				      android:inputType="number" >
+			</EditText>	
+		</LinearLayout> <!-- 접속Port -->
+		<!-- 접속 Context -->
+		<LinearLayout android:orientation="horizontal"
+			          android:layout_height="wrap_content"
+			          android:layout_width="fill_parent" 
+			          android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Push_AccessContextTextView"
+				      android:layout_width="80dip"
+				      android:layout_height="wrap_content"
+				      android:text="Context : " 
+				      android:textStyle="bold"
+				      android:textSize="16sp" 
+				      android:typeface="sans" 
+				      android:textColor="#FF888888" >
+			</TextView>	
+			<EditText android:id="@+id/id_configuration_Push_AccessContextEditText"
+				      android:layout_height="wrap_content" 
+				      android:layout_width="0dip"
+				      android:layout_weight="1" 
+				      android:inputType="textUri" >
+			</EditText>	
+		</LinearLayout> <!-- 접속 Context -->
+		<!-- Push SSL -->
+		<LinearLayout android:id="@+id/id_configuration_Push_Network_ssl_layout"
+			          android:orientation="horizontal"
+			          android:gravity="center_vertical"
+			          android:layout_height="wrap_content"
+			          android:layout_width="fill_parent" 
+			          android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_Push_SSLView"
+				      android:layout_width="80dip"
+				      android:layout_height="wrap_content"
+				      android:text="SSL : " 
+				      android:textStyle="bold"
+				      android:textSize="16sp" 
+				      android:typeface="sans" 
+				      android:textColor="#FF888888" >
+			</TextView>	
+			
+			<LinearLayout android:layout_height="wrap_content"
+		                  android:id="@+id/linearLayout2"
+		                  android:orientation="horizontal"
+		                  android:layout_width="fill_parent">
+		                  <RadioGroup android:layout_height="wrap_content"
+			                          android:layout_width="wrap_content"
+			                          android:orientation="horizontal"
+			                          android:id="@+id/radioGroupPushSSL">
+			                          <RadioButton android:id="@+id/radioPushSSLTrue"
+			                                       android:layout_width="wrap_content"
+			                                       android:layout_height="wrap_content"
+			                                       android:text="true" >
+			                          </RadioButton>
+			                          <RadioButton android:id="@+id/radioPushSSLFalse"
+			                                       android:layout_width="wrap_content"
+			                                       android:layout_height="wrap_content"
+			                                       android:text="false" >
+			                          </RadioButton>
+		                  </RadioGroup>
+	        </LinearLayout>
+			
+			<!-- 
+			<EditText android:id="@+id/id_configuration_Push_SslEditText"
+				      android:layout_height="wrap_content" 
+				      android:layout_width="0dip"
+				      android:layout_weight="1" 
+				      android:inputType="textEmailAddress" >
+			</EditText>
+			 -->	
+		</LinearLayout> <!-- Server SSL -->
+	</LinearLayout> <!-- Push Section -->
+	
+	<!-- 단말등록 여부 Section -->
+	<LinearLayout android:orientation="vertical"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content" 
+		          android:gravity="center_vertical"
+		          android:padding="5dip">
+		<TextView android:id="@+id/id_section_device_regist"
+			      android:layout_width="fill_parent"
+			      android:layout_height="wrap_content"
+			      android:text="단말 등록여부 정보" 
+			      android:textStyle="bold"
+			      android:textSize="16sp" 
+			      android:typeface="sans" 
+			      android:textColor="#ffc300" >
+		</TextView>	
+		
+		<!-- 단말 등록여부 체크 -->
+		<LinearLayout android:id="@+id/id_configuration_Device_reg_layout"
+			          android:orientation="horizontal"
+			          android:gravity="center_vertical"
+			          android:layout_height="wrap_content"
+			          android:layout_width="fill_parent" 
+			          android:layout_marginTop="8dip" >
+			<TextView android:id="@+id/id_configuration_DeviceReg_SSLView"
+				      android:layout_width="80dip"
+				      android:layout_height="wrap_content"
+				      android:text="등록여부 : " 
+				      android:textStyle="bold"
+				      android:textSize="16sp" 
+				      android:typeface="sans" 
+				      android:textColor="#FF888888" >
+			</TextView>	
+			
+			<LinearLayout android:layout_height="wrap_content"
+		                  android:id="@+id/linearLayout3"
+		                  android:orientation="horizontal"
+		                  android:layout_width="fill_parent">
+		                  <RadioGroup android:layout_height="wrap_content"
+			                          android:layout_width="wrap_content"
+			                          android:orientation="horizontal"
+			                          android:id="@+id/radioGroupDeviceYN">
+			                          <RadioButton android:id="@+id/radioDeviceRegTrue"
+			                                       android:layout_width="wrap_content"
+			                                       android:layout_height="wrap_content"
+			                                       android:text="true" >
+			                          </RadioButton>
+			                          <RadioButton android:id="@+id/radioDeviceRegFalse"
+			                                       android:layout_width="wrap_content"
+			                                       android:layout_height="wrap_content"
+			                                       android:text="false" >
+			                          </RadioButton>
+		                  </RadioGroup>
+	        </LinearLayout>
+			
+			<!-- 
+			<EditText android:id="@+id/id_configuration_DeviceReg_SslEditText"
+				      android:layout_height="wrap_content" 
+				      android:layout_width="0dip"
+				      android:layout_weight="1" 
+				      android:inputType="textEmailAddress" >
+			</EditText>
+			 -->	
+		</LinearLayout> <!-- 단말 등록여부 체크 -->
+	</LinearLayout> <!-- 단말등록 여부 Section -->
+
+	<!-- 사용자 안내글 표시  -->
+	<LinearLayout android:orientation="horizontal"
+			      android:layout_height="wrap_content"
+			      android:layout_width="fill_parent" 
+			      android:layout_marginTop="8dip" >
+	   <ImageView android:layout_width="wrap_content"
+				  android:layout_height="wrap_content" 
+				  android:layout_margin="8dip" 
+				  android:src="@drawable/icon_warning">
+	   </ImageView>
+	    
+	   <TextView android:id="@+id/id_configuration_Network_AlertMessageTextView"
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:text="AlertMessage" 
+				 android:textStyle="bold"
+				 android:textSize="16sp" 
+				 android:typeface="sans" 
+				 android:textColor="#FF888888" >
+	   </TextView>	
+	</LinearLayout> <!-- 사용자 안내글 표시  -->
+</LinearLayout>
+</ScrollView>

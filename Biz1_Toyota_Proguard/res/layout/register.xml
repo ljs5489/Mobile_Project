@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LoginLayout"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:background="@drawable/bizmob_register_top">	
+	</LinearLayout>
+	<LinearLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="center|top"
+		android:orientation="vertical"
+		android:background="@drawable/bizmob_register_bg">
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:gravity="center" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="60dip">
+			<LinearLayout android:orientation="vertical"
+				android:gravity="center" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingTop="10dip">
+				<TableLayout android:id="@+id/TableLayout01"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_width="wrap_content">
+					<TableRow android:id="@+id/TableRow01"
+						android:layout_height="wrap_content" android:layout_gravity="center"
+						android:layout_width="wrap_content">
+						<TextView android:id="@+id/id_number_TEXT" android:singleLine="true"
+							android:text="인증번호" android:textSize="18sp"
+							android:layout_width="wrap_content" 
+							android:textColor="@color/loginFontColor" 
+						    android:layout_height="36dip" ></TextView>
+					</TableRow>
+					<TableRow android:id="@+id/TableRow02" android:layout_marginTop="0dip"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_gravity="center">
+						<TextView android:layout_height="36dip"
+							android:layout_width="wrap_content"
+							android:singleLine="true" android:gravity="center_vertical"
+							android:textSize="18sp" android:id="@+id/id_number_TEXT"
+							android:text="전화번호" android:textColor="@color/loginFontColor"
+							android:visibility="gone">
+						</TextView>
+
+					</TableRow>
+				</TableLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:gravity="center" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingTop="10dip">
+				<TableLayout android:id="@+id/TableLayout01"
+					android:layout_height="wrap_content" android:layout_gravity="center"
+					android:layout_width="wrap_content">
+
+					<TableRow android:id="@+id/TableRow03"
+						android:layout_height="wrap_content" android:layout_gravity="center"
+						android:layout_width="wrap_content">
+						<EditText android:id="@+id/id_login_EditText_userId" android:singleLine="true"
+							android:layout_marginLeft="10dip"
+							android:hint="@string/login_IDHint" android:textSize="15sp"
+							android:layout_width="120dip" android:inputType="textEmailAddress"
+							android:textColor="@color/loginFontColor" 
+						    android:layout_height="36dip" ></EditText>
+					</TableRow>
+					<TableRow android:id="@+id/TableRow04" android:layout_marginTop="0dip"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_gravity="center">
+						<EditText android:layout_height="36dip"
+							android:layout_marginLeft="10dip"
+							android:layout_width="120dip"
+							android:singleLine="true" android:gravity="center_vertical"
+							android:textSize="15sp" android:id="@+id/id_login_EditText_password"
+							android:hint="@string/login_PWHint" android:textColor="@color/loginFontColor"
+							android:visibility="gone">
+						</EditText>
+
+					</TableRow>
+				</TableLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:gravity="center">
+				<LinearLayout android:orientation="horizontal"
+					android:layout_gravity="center" android:layout_height="fill_parent"
+					android:layout_width="fill_parent" android:paddingTop="4dip">
+					<Button android:id="@+id/id_login_LoginButton"
+						android:layout_width="wrap_content" android:layout_height="fill_parent"
+						android:background="@drawable/bizmob_register_btn"
+						android:layout_marginTop="2dip" 
+						android:layout_marginLeft="10dip">
+					</Button>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="500dip" android:layout_width="fill_parent">	
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

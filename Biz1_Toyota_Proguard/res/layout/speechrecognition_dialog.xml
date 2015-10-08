@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:id="@+id/BaseLayout"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#000000">
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal" android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent">
+		<TextView android:textStyle="bold" android:textColor="#ffffff"
+			android:id="@+id/TextView01" android:text="이것을 찾으셨나요?"
+			android:layout_width="wrap_content" android:layout_weight="1"
+			android:textSize="18sp" android:layout_height="fill_parent"
+			android:gravity="center_vertical" android:layout_marginLeft="10dip"></TextView>
+		<Button android:id="@+id/Button01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="다시검색"
+			android:gravity="right"></Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content" android:layout_weight="0"
+		android:layout_width="fill_parent" android:layout_marginBottom="10dip"
+		android:layout_marginTop="5dip" android:layout_marginRight="10dip"
+		android:layout_marginLeft="10dip" android:gravity="center_horizontal">
+		<ListView android:id="@+id/ListView01" android:layout_height="300dip"
+			android:layout_width="fill_parent" android:cacheColorHint="#00000000" android:background="#FFFFFF"></ListView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_height="wrap_content" android:layout_weight="0"
+		android:layout_width="fill_parent" android:layout_marginBottom="10dip"
+		android:layout_marginTop="5dip" android:layout_marginRight="10dip"
+		android:layout_marginLeft="10dip" android:gravity="center_horizontal">
+		<Button android:layout_width="fill_parent" android:id="@+id/Button02"
+			android:background="#000000" android:textColor="#ffffff"
+			android:text="취소" android:textSize="20sp" android:layout_height="50dip"></Button>
+	</LinearLayout>
+</LinearLayout>
